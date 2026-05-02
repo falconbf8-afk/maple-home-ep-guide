@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maple Home — EP Category III Employer Guide (Syrian Worker)</title>
+<style>
+:root{
+  --navy:#1b3a5c;
+  --teal:#0b7b6b;
+  --gold:#c8971a;
+  --red:#c0392b;
+  --green:#059669;
+  --light:#f4f7fb;
+  --card:#ffffff;
+  --border:#dde3ef;
+  --muted:#6b7280;
+  --text:#1a1a2e;
+  --shadow:0 4px 20px rgba(26,58,92,.09);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--light);color:var(--text);line-height:1.65;font-size:15px;}
+
+/* ── TOP BAR ── */
+.topbar{background:#0d1f33;color:rgba(255,255,255,.55);font-size:.76rem;padding:.45rem 1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.3rem;}
+.topbar a{color:var(--gold);text-decoration:none;}
+
+/* ── NAV ── */
+nav{background:var(--navy);position:sticky;top:0;z-index:200;box-shadow:0 2px 10px rgba(0,0,0,.22);}
+.nav-inner{max-width:1060px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:0 1.2rem;flex-wrap:wrap;}
+.nav-logo{display:flex;align-items:center;gap:.7rem;padding:.9rem 0;}
+.nav-logo .maple-dot{background:var(--gold);width:10px;height:10px;border-radius:50%;}
+.nav-logo span{font-size:.98rem;font-weight:800;color:#fff;letter-spacing:.02em;}
+.nav-logo small{color:rgba(255,255,255,.55);font-size:.74rem;font-weight:400;}
+.nav-links{display:flex;flex-wrap:wrap;}
+.nav-links a{color:rgba(255,255,255,.75);text-decoration:none;padding:.9rem .7rem;font-size:.8rem;font-weight:600;border-bottom:3px solid transparent;transition:all .18s;white-space:nowrap;}
+.nav-links a:hover,.nav-links a.active{color:#fff;border-bottom-color:var(--gold);background:rgba(255,255,255,.07);}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,#0d1f33 0%,#1b3a5c 50%,#0b7b6b 100%);color:#fff;padding:3.2rem 1.5rem 2.2rem;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;right:-80px;top:-80px;width:400px;height:400px;background:rgba(200,151,26,.08);border-radius:50%;}
+.hero-inner{max-width:1060px;margin:auto;position:relative;}
+.hero-tag{background:rgba(200,151,26,.25);border:1px solid rgba(200,151,26,.5);color:var(--gold);font-size:.76rem;font-weight:700;padding:.28rem .85rem;border-radius:20px;display:inline-block;margin-bottom:.9rem;letter-spacing:.06em;text-transform:uppercase;}
+.hero h1{font-size:clamp(1.55rem,3.5vw,2.4rem);font-weight:900;line-height:1.2;margin-bottom:.6rem;}
+.hero h1 span{color:var(--gold);}
+.hero-sub{font-size:.95rem;opacity:.85;max-width:650px;margin-bottom:1.4rem;}
+.hero-pills{display:flex;flex-wrap:wrap;gap:.55rem;}
+.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:20px;padding:.28rem .85rem;font-size:.78rem;font-weight:600;}
+.pill.ok{background:rgba(5,150,105,.3);border-color:rgba(5,150,105,.6);}
+.pill.warn{background:rgba(192,57,43,.3);border-color:rgba(192,57,43,.5);}
+.pill.gold{background:rgba(200,151,26,.3);border-color:rgba(200,151,26,.6);}
+
+/* ── CONTAINER ── */
+.wrap{max-width:1060px;margin:0 auto;padding:0 1.2rem;}
+.section{padding:2.4rem 0 1rem;}
+.sec-title{font-size:1.25rem;font-weight:900;color:var(--navy);padding-bottom:.4rem;border-bottom:3px solid var(--teal);display:inline-block;margin-bottom:.25rem;}
+.sec-sub{color:var(--muted);font-size:.88rem;margin-bottom:1.2rem;margin-top:.25rem;}
+
+/* ── ALERT ── */
+.alert{border-radius:8px;padding:.8rem 1rem;font-size:.85rem;margin:.8rem 0;display:flex;gap:.7rem;align-items:flex-start;}
+.alert .ico{font-size:1.1rem;flex-shrink:0;margin-top:.05rem;}
+.al-blue{background:#dbeafe;border-left:4px solid #3b82f6;color:#1e3a8a;}
+.al-green{background:#d1fae5;border-left:4px solid var(--teal);color:#064e3b;}
+.al-red{background:#fee2e2;border-left:4px solid var(--red);color:#7f1d1d;}
+.al-yellow{background:#fef3c7;border-left:4px solid var(--gold);color:#78350f;}
+
+/* ── PHASE STEPPER ── */
+.stepper{display:flex;gap:0;margin:1.4rem 0;overflow-x:auto;padding-bottom:.3rem;}
+.phase-btn{flex:1;min-width:130px;background:var(--card);border:2px solid var(--border);padding:.75rem .6rem;text-align:center;cursor:pointer;font-size:.8rem;font-weight:700;color:var(--muted);transition:all .18s;position:relative;}
+.phase-btn:first-child{border-radius:10px 0 0 10px;}
+.phase-btn:last-child{border-radius:0 10px 10px 0;}
+.phase-btn:not(:first-child){border-left:none;}
+.phase-btn .pnum{display:block;font-size:1.1rem;margin-bottom:.2rem;}
+.phase-btn:hover{background:#f0f7ff;color:var(--navy);}
+.phase-btn.active{background:var(--navy);border-color:var(--navy);color:#fff;}
+.phase-btn.done{background:#d1fae5;border-color:#6ee7b7;color:#065f46;}
+.phase-content{display:none;}
+.phase-content.active{display:block;}
+
+/* ── EXPAND CARDS ── */
+.exp-grid{display:flex;flex-direction:column;gap:.65rem;margin-top:.8rem;}
+.exp-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);}
+.exp-header{width:100%;background:none;border:none;padding:1rem 1.1rem;text-align:left;cursor:pointer;display:flex;align-items:center;gap:.85rem;transition:background .15s;}
+.exp-header:hover{background:#f8faff;}
+.exp-icon{font-size:1.5rem;flex-shrink:0;}
+.exp-header-text{flex:1;}
+.exp-header-text h3{font-size:.95rem;font-weight:700;color:var(--navy);}
+.exp-header-text p{font-size:.8rem;color:var(--muted);margin-top:.1rem;}
+.exp-arrow{color:var(--teal);font-size:.9rem;flex-shrink:0;transition:transform .25s;}
+.exp-header.open .exp-arrow{transform:rotate(180deg);}
+.exp-body{max-height:0;overflow:hidden;transition:max-height .4s ease;}
+.exp-body.open{max-height:3000px;}
+.exp-body-inner{padding:.5rem 1.1rem 1.2rem 1.1rem;border-top:1px solid var(--border);font-size:.85rem;color:#374151;line-height:1.7;}
+.exp-body-inner h4{color:var(--navy);font-size:.9rem;font-weight:700;margin:1rem 0 .4rem;}
+.exp-body-inner h4:first-child{margin-top:0;}
+.exp-body-inner ul{padding-left:1.2rem;}
+.exp-body-inner ul li{margin-bottom:.28rem;}
+.exp-body-inner p{margin-bottom:.5rem;}
+.exp-status{font-size:.72rem;font-weight:700;padding:.15rem .6rem;border-radius:12px;flex-shrink:0;}
+.st-todo{background:#f3f4f6;color:#4b5563;}
+.st-now{background:#fef9c3;color:#713f12;}
+.st-done{background:#d1fae5;color:#065f46;}
+.st-req{background:#fee2e2;color:#991b1b;}
+
+/* ── COST TABLE ── */
+.ctbl{width:100%;border-collapse:collapse;font-size:.83rem;margin-top:.7rem;}
+.ctbl th{background:var(--navy);color:#fff;padding:.6rem .85rem;text-align:left;font-size:.78rem;font-weight:700;}
+.ctbl td{padding:.58rem .85rem;border-bottom:1px solid var(--border);}
+.ctbl tr:nth-child(even){background:#f8fafc;}
+.ctbl .total-row td{background:#1b3a5c;color:#fff;font-weight:700;}
+.cost-hi{color:var(--red);font-weight:700;}
+.cost-lo{color:var(--green);font-weight:700;}
+
+/* ── DOC LIST ── */
+.doc-list{display:flex;flex-direction:column;gap:.42rem;margin-top:.6rem;}
+.doc-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:.6rem .9rem;font-size:.84rem;display:flex;align-items:flex-start;gap:.6rem;}
+.doc-item.required::before{content:"🔴";flex-shrink:0;}
+.doc-item.optional::before{content:"🟡";flex-shrink:0;}
+.doc-item.done::before{content:"✅";flex-shrink:0;}
+.doc-item strong{color:var(--navy);}
+.doc-item span{color:var(--muted);font-size:.79rem;display:block;margin-top:.1rem;}
+
+/* ── CHECKLIST ── */
+.chklist{display:flex;flex-direction:column;gap:.4rem;margin-top:.6rem;}
+.ci{display:flex;align-items:center;gap:.7rem;background:var(--card);border-radius:8px;padding:.6rem .9rem;border:1px solid var(--border);cursor:pointer;font-size:.84rem;user-select:none;transition:background .15s;}
+.ci:hover{background:#f0f7ff;}
+.ci.chk{background:#d1fae5;border-color:#6ee7b7;}
+.ci .cb{width:1.2rem;height:1.2rem;border:2px solid var(--border);border-radius:4px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:.8rem;transition:all .15s;}
+.ci.chk .cb{background:var(--teal);border-color:var(--teal);color:#fff;}
+.prg-w{background:#e5e7eb;border-radius:99px;height:7px;margin-top:.8rem;}
+.prg-b{background:var(--teal);height:7px;border-radius:99px;transition:width .4s;}
+.prg-l{font-size:.78rem;color:var(--muted);margin-top:.25rem;}
+
+/* ── TEMPLATE BOX ── */
+.tpl-box{background:#0f172a;border-radius:12px;padding:1.4rem;font-family:'Courier New',monospace;font-size:.78rem;color:#e2e8f0;line-height:1.85;overflow-x:auto;margin-top:.8rem;}
+.tpl-box pre{white-space:pre-wrap;margin:0;}
+
+/* ── TIMELINE ── */
+.tl{position:relative;padding-left:1.8rem;margin-top:.8rem;}
+.tl::before{content:'';position:absolute;left:.45rem;top:0;bottom:0;width:2px;background:var(--border);}
+.tl-it{position:relative;margin-bottom:1.1rem;}
+.tl-dot{position:absolute;left:-1.6rem;top:.28rem;width:13px;height:13px;background:var(--teal);border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 2px var(--teal);}
+.tl-t{font-size:.75rem;font-weight:700;color:var(--teal);}
+.tl-it h4{font-size:.9rem;font-weight:700;color:var(--navy);}
+.tl-it p{font-size:.82rem;color:var(--muted);}
+
+/* ── GRID ── */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;}
+.mini-card{background:var(--card);border-radius:10px;border:1px solid var(--border);padding:1rem 1.1rem;box-shadow:var(--shadow);}
+.mini-card .mc-icon{font-size:1.7rem;margin-bottom:.4rem;}
+.mini-card h4{font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:.25rem;}
+.mini-card p{font-size:.82rem;color:var(--muted);}
+.tag{display:inline-block;border-radius:12px;padding:.14rem .55rem;font-size:.72rem;font-weight:700;margin-top:.4rem;text-transform:uppercase;}
+.tg{background:#d1fae5;color:#065f46;}
+.tb{background:#dbeafe;color:#1e40af;}
+.to{background:#ffedd5;color:#9a3412;}
+.tr{background:#fee2e2;color:#991b1b;}
+.tgo{background:#fef9c3;color:#713f12;}
+
+/* ── PRINT BTN ── */
+.print-btn{background:var(--teal);color:#fff;border:none;border-radius:8px;padding:.55rem 1.2rem;font-size:.84rem;font-weight:700;cursor:pointer;transition:background .18s;display:flex;align-items:center;gap:.4rem;}
+.print-btn:hover{background:#065f46;}
+
+footer{background:var(--navy);color:rgba(255,255,255,.65);text-align:center;padding:1.6rem 1.5rem;font-size:.79rem;margin-top:2.5rem;}
+footer a{color:var(--gold);text-decoration:none;}
+
+@media(max-width:640px){
+  .g2,.g3{grid-template-columns:1fr!important;}
+  .phase-btn{min-width:100px;}
+  .hero{padding:2rem 1rem 1.5rem;}
+}
+@media print{nav,.topbar,footer,.print-btn,.stepper{display:none!important;}.phase-content{display:block!important;}.exp-body{max-height:none!important;display:block!important;}}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span>📋 Employment Pass (Category III) — Employer Action Guide &nbsp;|&nbsp; Maple Home Sdn Bhd &nbsp;|&nbsp; Updated May 2026</span>
+  <span>Questions? <a href="https://esd.imi.gov.my" target="_blank">esd.imi.gov.my</a> &nbsp;|&nbsp; <a href="https://www.moha.gov.my" target="_blank">moha.gov.my</a></span>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <div class="maple-dot"></div>
+      <div>
+        <span>Maple Home <small>— EP Sponsorship Guide</small></span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#overview">Overview</a>
+      <a href="#phases">Step-by-Step</a>
+      <a href="#documents">Documents</a>
+      <a href="#costs">Costs</a>
+      <a href="#cheaper">Cheaper Options</a>
+      <a href="#job-title">Job Title</a>
+      <a href="#succession">Succession Plan</a>
+      <a href="#checklist">Checklist</a>
+      <a href="#template">Templates</a>
+      <a href="#references">References</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">🏢 Employer Guide — Maple Home</div>
+    <h1>Sponsoring Your Syrian Worker<br>for <span>Employment Pass Category III</span></h1>
+    <p class="hero-sub">A complete step-by-step guide for Maple Home to legally employ your Syrian operations staff — covering every document, cost, timeline, and form you need. No legal jargon.</p>
+    <div class="hero-pills">
+      <span class="pill">🇸🇾 Syrian National (UNHCR 7 yrs)</span>
+      <span class="pill gold">💼 EP Category III</span>
+      <span class="pill">🏨 Service Apartment Sector</span>
+      <span class="pill ok">✅ Operations Role — No Change Needed</span>
+      <span class="pill warn">⚠️ Salary Min. RM 5,000/month</span>
+      <span class="pill gold">📅 From 1 June 2026</span>
+    </div>
+  </div>
+</div>
+
+<!-- OVERVIEW -->
+<div class="wrap section" id="overview">
+  <div class="sec-title">Situation Overview</div>
+  <p class="sec-sub">What you are doing, why it works, and what to expect.</p>
+
+  <div class="g3" style="margin-top:.8rem;">
+    <div class="mini-card">
+      <div class="mc-icon">🏢</div>
+      <h4>The Company</h4>
+      <p><strong>Maple Home Sdn Bhd</strong><br>Short-stay service apartment management. 2,000+ rooms across KL &amp; Selangor. Qualifies as a <em>Services sector</em> employer for EP purposes.</p>
+      <span class="tag tb">Services Sector</span>
+    </div>
+    <div class="mini-card">
+      <div class="mc-icon">🧑</div>
+      <h4>The Worker</h4>
+      <p>Syrian national. UNHCR-registered 7 years in Malaysia. Currently working in <strong>Operations</strong>. Also has IT and design skills. No criminal record.</p>
+      <span class="tag tgo">Syrian / UNHCR 7 Yrs</span>
+    </div>
+    <div class="mini-card">
+      <div class="mc-icon">📄</div>
+      <h4>The Visa</h4>
+      <p><strong>Employment Pass Category III</strong><br>For skilled/executive roles. Salary RM 5,000–9,999/month. Valid up to 5 years total. Requires succession plan.</p>
+      <span class="tag tg">EP Cat III</span>
+    </div>
+  </div>
+
+  <div class="alert al-green" style="margin-top:1.2rem;">
+    <span class="ico">✅</span>
+    <div><strong>Good news — his Operations role qualifies.</strong> You do NOT need to change his job title to IT or Designer. "Operations Executive" or "Property Operations Executive" is a valid EP Category III role in the services/hospitality sector. His IT and design skills strengthen the justification letter but the role stays honest. Read the <a href="#job-title" style="color:var(--teal);font-weight:700;">Job Title section</a> for the exact recommended title.</div>
+  </div>
+
+  <div class="alert al-yellow" style="margin-top:.6rem;">
+    <span class="ico">⚠️</span>
+    <div><strong>The one hard requirement you must meet:</strong> His salary must be at least <strong>RM 5,000/month basic</strong> (effective 1 June 2026 under revised EP thresholds). If he is currently earning less, he must be formally promoted/salary-adjusted before or at the time of the EP application. Everything else is paperwork — this is the only blocker.<br><small style="opacity:.8;">Source: <a href="https://esd.imi.gov.my" target="_blank" style="color:var(--teal);">ESD Official Guidelines — esd.imi.gov.my</a> | <a href="https://www.imi.gov.my" target="_blank" style="color:var(--teal);">Immigration Act 1959/63 — imi.gov.my</a></small></div>
+  </div>
+
+  <!-- WHAT YOU CANNOT DO -->
+  <div class="alert al-red" style="margin-top:.6rem;">
+    <span class="ico">🚫</span>
+    <div><strong>Do NOT falsify his job title.</strong> Putting "IT Executive" or "Graphic Designer" on the EP when his actual work is operations is document fraud. If ESD audits Maple Home (site visits do happen), a mismatch between declared role and actual duties can result in EP cancellation, blacklisting of the company from future EP applications, and legal liability. Keep the role honest — Operations qualifies.</div>
+  </div>
+</div>
+
+<!-- PHASE STEPPER -->
+<div style="background:#fff;border-top:1px solid var(--border);">
+<div class="wrap section" id="phases">
+  <div class="sec-title">Step-by-Step Process</div>
+  <p class="sec-sub">Click each phase to expand the full details. Complete them in order.</p>
+
+  <div class="stepper" id="stepper">
+    <div class="phase-btn active" onclick="setPhase(0,this)"><span class="pnum">⚙️</span>Phase 1<br><small>Preparation</small></div>
+    <div class="phase-btn" onclick="setPhase(1,this)"><span class="pnum">🏢</span>Phase 2<br><small>Register ESD</small></div>
+    <div class="phase-btn" onclick="setPhase(2,this)"><span class="pnum">📋</span>Phase 3<br><small>Get Post Approval</small></div>
+    <div class="phase-btn" onclick="setPhase(3,this)"><span class="pnum">📤</span>Phase 4<br><small>Submit EP</small></div>
+    <div class="phase-btn" onclick="setPhase(4,this)"><span class="pnum">✅</span>Phase 5<br><small>Approval &amp; Issue</small></div>
+    <div class="phase-btn" onclick="setPhase(5,this)"><span class="pnum">🔄</span>Phase 6<br><small>Ongoing</small></div>
+  </div>
+
+  <!-- PHASE 0: PREPARATION -->
+  <div class="phase-content active" id="phase-0">
+    <div class="alert al-blue"><span class="ico">ℹ️</span><div>Before touching any government portal, complete everything in this phase internally at Maple Home. This takes 2–4 weeks.</div></div>
+    <div class="exp-grid">
+
+      <div class="exp-card">
+        <button class="exp-header" onclick="expand(this)">
+          <span class="exp-icon">💰</span>
+          <div class="exp-header-text"><h3>Step 1 — Set Salary at Minimum RM 5,000/month</h3><p>Must be done before any EP application</p></div>
+          <span class="exp-status st-req">REQUIRED FIRST</span>
+          <span class="exp-arrow">▼</span>
+        </button>
+        <div class="exp-body">
+          <div class="exp-body-inner">
+            <h4>Legal Basis</h4>
+            <p>EP Category III salary minimum is set by the <strong>Expatriate Services Division (ESD)</strong> under the Ministry of Home Affairs. From <strong>1 June 2026</strong>, the revised threshold is RM 5,000/month basic. Allowances (transport, housing, mobile) do NOT count toward this figure — only basic monthly salary as stated in the employment contract.</p>
+            <p><small>📎 Reference: <a href="https://esd.imi.gov.my" target="_blank" style="color:var(--teal);">ESD Official Guidelines — esd.imi.gov.my</a></small></p>
+            <h4>EP Category Thresholds (effective 1 June 2026)</h4>
+            <table class="ctbl" style="margin:.4rem 0;">
+              <thead><tr><th>Category</th><th>Basic Salary/Month</th><th>Max Tenure</th></tr></thead>
+              <tbody>
+                <tr><td>Category I</td><td>RM 20,000 and above</td><td>No limit</td></tr>
+                <tr style="background:#fffbeb;"><td><strong>Category III ← Use this</strong></td><td><strong>RM 5,000 – RM 9,999</strong></td><td>5 years cumulative</td></tr>
+                <tr><td>Category II</td><td>RM 10,000 – RM 19,999</td><td>No limit</td></tr>
+              </tbody>
+            </table>
+            <h4>How to document the salary correctly</h4>
+            <ul>
+              <li>Issue a formal <strong>Salary Adjustment / Promotion Letter</strong> on company letterhead (template in <a href="#template" style="color:var(--teal);">Templates section</a>)</li>
+              <li>Both employer director and worker must sign it</li>
+              <li>Update the employment contract or issue a written addendum</li>
+              <li>Reflect the new salary in at least <strong>1 month's payslip</strong> before EP submission — ESD will ask for this</li>
+              <li>Update SOCSO contribution to reflect new salary amount</li>
+            </ul>
+            <h4>Suggested salary for this role</h4>
+            <p>RM 5,000–6,500/month is market-appropriate for an Operations Executive in a KL service apartment. Pitching RM 5,500–6,000 is safer than the absolute minimum — it shows the role is genuinely valued.</p>
+            <div class="alert al-yellow" style="margin-top:.5rem;"><span class="ico">💡</span><div>If he is currently paid significantly below RM 5,000, ESD may question a sudden large jump. Back it up with a promotion letter clearly stating expanded responsibilities and an org chart showing his seniority level. See Template 3.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <button class="exp-header" onclick="expand(this)">
+          <span class="exp-icon">📝</span>
+          <div class="exp-header-text"><h3>Step 2 — Write the Job Description for "Operations Executive"</h3><p>Forms the basis of the EP application</p></div>
+          <span class="exp-status st-now">DO EARLY</span>
+          <span class="exp-arrow">▼</span>
+        </button>
+        <div class="exp-body">
+          <div class="exp-body-inner">
+            <h4>Recommended Job Title</h4>
+            <p><strong>Operations Executive</strong> — or alternatively <strong>Property Operations Executive</strong>. Both are honest, professional, and qualify for EP Category III in the services sector.</p>
+            <h4>Why his IT &amp; design skills help (without changing his title)</h4>
+            <p>In the job description, include responsibilities that use his IT and design knowledge naturally within operations. For example:</p>
+            <ul>
+              <li>Oversee day-to-day operations of [X] service apartment units</li>
+              <li>Manage property management system (PMS) — data entry, reporting, troubleshooting</li>
+              <li>Coordinate with tech vendors for smart lock systems, CCTV, WiFi infrastructure</li>
+              <li>Produce digital marketing materials, room photography, and listing updates on Airbnb/Agoda/Booking.com</li>
+              <li>Manage guest experience workflows and cross-departmental coordination</li>
+              <li>Prepare operational reports, dashboards, and performance analytics</li>
+              <li>Liaise with housekeeping, maintenance, and front-desk teams</li>
+            </ul>
+            <p>This is truthful — these are real tasks in a service apartment — and demonstrates why specialised skills (IT + ops + design) make this role difficult to fill locally.</p>
+            <div class="alert al-green" style="margin-top:.5rem;"><span class="ico">✅</span><div>See the <a href="#template" style="color:var(--teal);font-weight:700;">Templates section</a> for a ready-to-use Job Description you can print on company letterhead.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <button class="exp-header" onclick="expand(this)">
+          <span class="exp-icon">🔍</span>
+          <div class="exp-header-text"><h3>Step 3 — Post a Local Job Ad (and Document the Result)</h3><p>Mandatory evidence that no qualified Malaysian was found</p></div>
+          <span class="exp-status st-req">MUST DO</span>
+          <span class="exp-arrow">▼</span>
+        </button>
+        <div class="exp-body">
+          <div class="exp-body-inner">
+            <h4>Legal Requirement</h4>
+            <p>ESD mandates that employers demonstrate a genuine effort to hire a Malaysian before approving a foreign national for an EP. This is reviewed — not rubber-stamped. A missing or weak job ad is one of the top reasons ESD rejects post applications.</p>
+            <p><small>📎 Reference: <a href="https://www.myfuturejobs.gov.my" target="_blank" style="color:var(--teal);">MyFutureJobs Official Portal — myfuturejobs.gov.my</a> (government job board, mandatory for ESD evidence)</small></p>
+            <h4>Where to post — mandatory + recommended</h4>
+            <ul>
+              <li><strong>MyFutureJobs</strong> — <a href="https://www.myfuturejobs.gov.my" target="_blank" style="color:var(--teal);">myfuturejobs.gov.my</a> — this is the government portal ESD specifically looks for. Register as an employer, post the vacancy, keep the job ID number.</li>
+              <li><strong>JobStreet</strong> — <a href="https://www.jobstreet.com.my" target="_blank" style="color:var(--teal);">jobstreet.com.my</a> — most widely used commercial job board in Malaysia</li>
+              <li><strong>LinkedIn</strong> — optional but strengthens the evidence</li>
+              <li>Run the ad for a minimum of <strong>28 days</strong> (4 weeks) before closing — shorter periods look insincere</li>
+            </ul>
+            <h4>What to write in the job ad</h4>
+            <p>Post the multi-skill role clearly: <em>"Operations Executive — property operations management, property management system (PMS), smart home/IoT coordination, digital listing management (Airbnb/Agoda/Booking.com), Canva/visual content."</em> The combined requirement naturally limits the local applicant pool and strengthens your case.</p>
+            <h4>What to document after the ad closes (save all of this)</h4>
+            <ul>
+              <li>Screenshot of the live posting with date visible (or PDF export from MyFutureJobs)</li>
+              <li>Job posting ID / reference number from MyFutureJobs</li>
+              <li>Number of applications received</li>
+              <li>Shortlisting records: why each applicant did not meet requirements</li>
+              <li>A signed <strong>HR Justification Letter</strong> on company letterhead stating: "After advertising for [X] days on MyFutureJobs and JobStreet, no suitably qualified Malaysian candidate was found for the following reasons: [list skills gaps]." — see Template 2 in <a href="#template" style="color:var(--teal);">Templates section</a></li>
+            </ul>
+            <div class="alert al-yellow" style="margin-top:.5rem;"><span class="ico">💡</span><div>If you receive zero applications, note that too — it proves the role is hard to fill. If you receive applications that don't match, keep the rejection records. ESD may ask to see them.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <button class="exp-header" onclick="expand(this)">
+          <span class="exp-icon">📄</span>
+          <div class="exp-header-text"><h3>Step 4 — Prepare the Succession Plan</h3><p>Mandatory for EP Cat III — must be submitted with application</p></div>
+          <span class="exp-status st-req">MANDATORY</span>
+          <span class="exp-arrow">▼</span>
+        </button>
+        <div class="exp-body">
+          <div class="exp-body-inner">
+            <p>A full succession plan template specific to this role and company is provided in the <a href="#succession" style="color:var(--teal);font-weight:700;">Succession Plan section</a> below. In summary, the plan must show:</p>
+            <ul>
+              <li>Who the Malaysian successor will be (or when they will be hired)</li>
+              <li>A year-by-year training and knowledge transfer schedule</li>
+              <li>How operational continuity is maintained during the transition</li>
+              <li>That by Year 5, a Malaysian will hold the role independently</li>
+            </ul>
+            <p>The plan is signed by a company director and uploaded as a PDF to ePASS.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <button class="exp-header" onclick="expand(this)">
+          <span class="exp-icon">🎓</span>
+          <div class="exp-header-text"><h3>Step 5 — Prepare for the 1:3 Internship Policy</h3><p>Mandatory from January 2026 for all EP holders</p></div>
+          <span class="exp-status st-req">MANDATORY</span>
+          <span class="exp-arrow">▼</span>
+        </button>
+        <div class="exp-body">
+          <div class="exp-body-inner">
+            <h4>What it means</h4>
+            <p>For every EP holder Maple Home employs, the company must provide <strong>3 structured, paid internships</strong> to Malaysian students per year. This is enforced from January 2026.</p>
+            <h4>How to comply</h4>
+            <ul>
+              <li>Register Maple Home as an internship host on <strong>TalentCorp Malaysia's</strong> MyInternship portal</li>
+              <li>Offer 3 internship positions in relevant departments (operations, admin, digital marketing)</li>
+              <li>Internships must be paid (minimum RM 500–600/month is the norm, though no fixed legal rate)</li>
+              <li>Keep records: intern name, period, tasks, monthly allowance paid</li>
+            </ul>
+            <div class="alert al-blue" style="margin-top:.5rem;"><span class="ico">💡</span><div>This is actually beneficial for Maple Home — free/low-cost junior staff who can be converted to full-time hires, supporting the succession plan.</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end exp-grid -->
+  </div><!-- end phase-0 -->
+
+  <!-- PHASE 1: REGISTER ESD -->
+  <div class="phase-content" id="phase-1">
+    <div class="alert al-blue"><span class="ico">ℹ️</span><div>Register Maple Home with the Expatriate Services Division (ESD) — the government body under the Immigration Department that processes all EP applications. This is a <strong>one-time company registration</strong>. If Maple Home has previously sponsored other EP holders, the account already exists — skip to Phase 3.<br><small>📎 Official portal: <a href="https://esd.imi.gov.my" target="_blank" style="color:var(--teal);">esd.imi.gov.my</a> | ESD hotline: <strong>+603-8000 8000</strong> | Email: <strong>esd@imi.gov.my</strong></small></div></div>
+    <div class="exp-grid">
+
+      <div class="exp-card">
+        <button class="exp-header" onclick="expand(this)">
+          <span class="exp-icon">🌐</span>
+          <div class="exp-header-text"><h3>Create Company Account on MYXpats / ePASS Portal</h3><p>esd.imi.gov.my — step-by-step</p></div>
+          <span class="exp-status st-now">ONE-TIME</span>
+          <span class="exp-arrow">▼</span>
+        </button>
+        <div class="exp-body">
+          <div class="exp-body-inner">
+            <h4>Portal & What It Is</h4>
+            <p>The <strong>ESD portal (ePASS / MYXpats Centre)</strong> at <a href="https://esd.imi.gov.my" target="_blank" style="color:var(--teal);">esd.imi.gov.my</a> is the official Immigration Department platform for all Employment Pass applications. All submissions, approvals, renewals and notifications happen here — there is no paper process.</p>
+            <h4>Step-by-step: create company account</h4>
+            <ol style="padding-left:1.2rem;line-height:2;">
+              <li>Go to <a href="https://esd.imi.gov.my" target="_blank" style="color:var(--teal);">esd.imi.gov.my</a></li>
+              <li>Click <strong>"MYXpats Centre"</strong> → <strong>"Employer Registration"</strong></li>
+              <li>Fill in: company name, SSM registration number, business address, industry (select <em>Services</em>), contact person details</li>
+              <li>Upload all required documents (see list below)</li>
+              <li>Submit — you will receive an activation email within 3–7 working days</li>
+              <li>Once activated, log in and complete your company profile before applying for any EP</li>
+            </ol>
+            <h4>Documents to upload for company registration</h4>
+            <ul>
+              <li><strong>SSM Certificate of Incorporation</strong> — Form 9 (private company) or Form 13. Obtain latest copy from <a href="https://www.ssm.com.my" target="_blank" style="color:var(--teal);">ssm.com.my</a></li>
+              <li><strong>SSM Business Profile (mySSminfo)</strong> — printed within last 3 months</li>
+              <li><strong>Company Tax Identification Number</strong> — from <a href="https://www.hasil.gov.my" target="_blank" style="color:var(--teal);">LHDN (hasil.gov.my)</a></li>
+              <li><strong>SOCSO Employer Registration Number</strong> — from <a href="https://www.perkeso.gov.my" target="_blank" style="color:var(--teal);">perkeso.gov.my</a></li>
+              <li><strong>Company bank account details</strong> (for fee payments)</li>
+              <li><strong>Director's MyKad (NRIC)</strong> or passport if foreign director</li>
+              <li><strong>Latest audited financial statements</strong> (last 1–2 years) — shows company can afford the salary</li>
+            </ul>
+            <h4>Processing time</h4>
+            <p>Company ESD profile approved within <strong>3–7 working days</strong>. You will receive a confirmation email with login credentials.</p>
+            <div class="alert al-blue" style="margin-top:.5rem;"><span class="ico">ℹ️</span><div>If you face issues with registration, call ESD directly: <strong>+603-8000 8000</strong> (Mon–Fri, 8am–5pm) or visit ESD One-Stop Centre, Level 1–3, Block D, Pusat Bandar Damansara, 50490 Kuala Lumpur.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <button class="exp-header" onclick="expand(this)">
+          <span class="exp-icon">✔️</span>
+          <div class="exp-header-text"><h3>Company Eligibility — Does Maple Home Qualify?</h3><p>ESD minimum requirements checklist</p></div>
+          <span class="exp-status st-done">LIKELY YES</span>
+          <span class="exp-arrow">▼</span>
+        </button>
+        <div class="exp-body">
+          <div class="exp-body-inner">
+            <p>To register with ESD, Maple Home must meet all of the following criteria. Tick each one before applying:</p>
+            <ul>
+              <li>✅ <strong>Registered Malaysian company (Sdn Bhd)</strong> — verified via SSM</li>
+              <li>✅ <strong>Minimum 5 Malaysian employees</strong> on active payroll with SOCSO contributions (ESD checks SOCSO records)</li>
+              <li>✅ <strong>Ratio of local to foreign staff</strong> — EP holders must not exceed a set percentage of total headcount. For services sector, typically no more than 1 EP per 5 local staff. With Maple Home's scale this is easily met.</li>
+              <li>✅ <strong>Company not newly formed</strong> — ideally 12+ months of operations with financial records</li>
+              <li>✅ <strong>Active and genuine business</strong> — not a shell company; real business premises</li>
+              <li>✅ <strong>No outstanding LHDN tax penalties</strong> — ESD cross-checks with HASIL</li>
+              <li>✅ <strong>Valid SSM registration</strong> — must be current, not expired/struck off</li>
+            </ul>
+            <p>With 2,000+ rooms managed across KL and a sizeable local workforce, Maple Home easily meets all criteria.</p>
+            <p><small>📎 Reference: <a href="https://esd.imi.gov.my" target="_blank" style="color:var(--teal);">ESD Employer Guidelines — esd.imi.gov.my</a></small></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PHASE 2: POST APPROVAL -->
+  <div class="phase-content" id="phase-2">
+    <div class="alert al-blue"><span class="ico">ℹ️</span><div>Before submitting the EP application for the Syrian worker, Maple Home must first get an <strong>"Expatriate Post"</strong> approved by ESD. This approves the <em>job position</em> — not the individual person yet. Only after the post is approved can you name the specific employee. Typical processing: <strong>5–15 working days</strong>.<br><small>📎 Done via: <a href="https://esd.imi.gov.my" target="_blank" style="color:var(--teal);">esd.imi.gov.my</a> → MYXpats Centre → Expatriate Post Application</small></div></div>
+    <div class="exp-grid">
+
+      <div class="exp-card">
+        <button class="exp-header" onclick="expand(this)">
+          <span class="exp-icon">📋</span>
+          <div class="exp-header-text"><h3>Apply for Expatriate Post Approval</h3><p>Approve the "Operations Executive" position for a foreign hire</p></div>
+          <span class="exp-status st-req">REQUIRED</span>
+          <span class="exp-arrow">▼</span>
+        </button>
+        <div class="exp-body">
+          <div class="exp-body-inner">
+            <h4>What is an Expatriate Post?</h4>
+            <p>An ESD-approved quota slot for one foreign employee in a specific role. Maple Home must justify to ESD why this particular role cannot be filled by a Malaysian. The post is approved first; then you attach the specific candidate (the Syrian worker) to the approved post in Phase 4.</p>
+            <h4>Step-by-step: how to apply for the post</h4>
+            <ol style="padding-left:1.2rem;line-height:2;">
+              <li>Log into <a href="https://esd.imi.gov.my" target="_blank" style="color:var(--teal);">esd.imi.gov.my</a> → MYXpats Centre → <strong>"Expatriate Post Application"</strong></li>
+              <li>Select industry: <strong>Services</strong></li>
+              <li>Enter proposed job title: <strong>Operations Executive</strong></li>
+              <li>Enter proposed monthly salary: e.g. <strong>RM 5,500</strong></li>
+              <li>Upload all supporting documents (list below)</li>
+              <li>Submit — ESD officer reviews and may request additional info via email</li>
+              <li>On approval you receive a <strong>Post Approval Reference Number</strong> — save this, it is needed in Phase 4</li>
+            </ol>
+            <h4>Documents to upload for post approval</h4>
+            <ul>
+              <li><strong>Detailed Job Description</strong> — minimum 1 full page covering all duties, required skills, qualifications. Use Template 1 from <a href="#template" style="color:var(--teal);">Templates section</a>.</li>
+              <li><strong>MyFutureJobs posting screenshot</strong> — must show job title, posting date, closing date, and your company name. Download the official confirmation PDF from <a href="https://www.myfuturejobs.gov.my" target="_blank" style="color:var(--teal);">myfuturejobs.gov.my</a>.</li>
+              <li><strong>HR Justification Letter</strong> — signed by a company director. States why no qualified Malaysian was found. Use Template 2 from <a href="#template" style="color:var(--teal);">Templates section</a>.</li>
+              <li><strong>Organisational Chart</strong> — shows where "Operations Executive" sits in the company structure, who this person reports to, and who reports to them</li>
+              <li><strong>Latest audited financial statements</strong> — last 1–2 years. Proves the company is financially able to pay the declared salary. Obtained from your company accountant or via <a href="https://www.ssm.com.my" target="_blank" style="color:var(--teal);">SSM</a>.</li>
+            </ul>
+            <div class="alert al-yellow" style="margin-top:.6rem;"><span class="ico">⚠️</span><div>ESD may email you requesting additional documents or clarification within the 5–15 day window. Check the registered email daily and respond within 3 working days to avoid delays.</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PHASE 3: SUBMIT EP -->
+  <div class="phase-content" id="phase-3">
+    <div class="alert al-blue"><span class="ico">ℹ️</span><div>Once the Expatriate Post is approved, submit the EP application for the Syrian worker. <strong>The employer submits — the worker cannot apply himself.</strong> Legal basis: Immigration Act 1959/63, Section 9(1)(b) — Employment Pass.<br><small>📎 Portal: <a href="https://esd.imi.gov.my" target="_blank" style="color:var(--teal);">esd.imi.gov.my</a> | Hotline: <strong>+603-8000 8000</strong></small></div></div>
+    <div class="exp-grid">
+
+      <div class="exp-card">
+        <button class="exp-header" onclick="expand(this)">
+          <span class="exp-icon">📤</span>
+          <div class="exp-header-text"><h3>Submit Employment Pass Application on ePASS</h3><p>Step-by-step walkthrough for the Syrian worker's EP</p></div>
+          <span class="exp-status st-req">KEY STEP</span>
+          <span class="exp-arrow">▼</span>
+        </button>
+        <div class="exp-body">
+          <div class="exp-body-inner">
+            <h4>Where to submit</h4>
+            <p><a href="https://esd.imi.gov.my" target="_blank" style="color:var(--teal);">esd.imi.gov.my</a> → MYXpats Centre → <strong>New EP Application</strong>. All submissions are online only — no walk-in for initial applications.</p>
+            <h4>Step-by-step form walkthrough</h4>
+            <ol style="padding-left:1.2rem;line-height:2;">
+              <li>Log in → select <strong>"New Employment Pass Application"</strong></li>
+              <li>Select the approved <strong>Expatriate Post</strong> (by reference number from Phase 3)</li>
+              <li>Enter employee details: full legal name (as in passport/UNHCR card), nationality (<em>Syrian Arab Republic</em>), date of birth, gender</li>
+              <li>Enter document numbers: UNHCR card number; passport number if available (mark "N/A" if no passport and attach explanation letter)</li>
+              <li>Enter proposed salary: <strong>RM [5,000+] per month basic</strong> — must match exactly what is in the offer letter</li>
+              <li>Enter job title: <strong>Operations Executive</strong></li>
+              <li>Enter proposed start date (must be a future date)</li>
+              <li>Upload all supporting documents (see full list below)</li>
+              <li>Pay application fee: <strong>RM 300–600</strong> online by credit/debit card or FPX</li>
+              <li>Submit — you will receive an acknowledgement number. Track status via the same portal.</li>
+            </ol>
+            <h4>Complete Document Upload Checklist</h4>
+            <p><strong>Company documents (employer):</strong></p>
+            <ul>
+              <li>Approved Expatriate Post reference / approval letter</li>
+              <li>Latest SSM company profile (printed within 3 months) — <a href="https://www.ssm.com.my" target="_blank" style="color:var(--teal);">ssm.com.my</a></li>
+              <li>Latest audited financial statements (1–2 years)</li>
+              <li>Offer letter / Employment Contract on company letterhead — signed by both parties, states basic salary, job title, start date</li>
+              <li>Job description (Template 1)</li>
+              <li>HR Justification Letter / "No Malaysian found" memo (Template 2)</li>
+              <li>MyFutureJobs posting confirmation PDF — <a href="https://www.myfuturejobs.gov.my" target="_blank" style="color:var(--teal);">myfuturejobs.gov.my</a></li>
+              <li>Organisational chart</li>
+              <li>Succession Plan (Template in <a href="#succession" style="color:var(--teal);">Succession Plan section</a>)</li>
+              <li>Salary Adjustment / Promotion Letter (Template 3) — if salary was recently increased</li>
+            </ul>
+            <p><strong>Employee documents (Syrian worker):</strong></p>
+            <ul>
+              <li>Passport bio page — valid or expired (see Syrian Passport card below)</li>
+              <li>Current UNHCR Refugee Card (both sides, colour scan)</li>
+              <li>UNHCR RSD (Refugee Status Determination) Decision Letter</li>
+              <li>UNHCR status confirmation letter — obtainable from <a href="https://www.unhcr.org/my" target="_blank" style="color:var(--teal);">UNHCR Malaysia</a> (+603-2141-0082)</li>
+              <li>Academic / professional certificates (highest qualification relevant to the role)</li>
+              <li>CV / resume (minimum 1 page)</li>
+              <li>Passport-size photo (recent, white background)</li>
+              <li>Police clearance certificate — apply at nearest PDRM station or via <a href="https://www.rmp.gov.my" target="_blank" style="color:var(--teal);">rmp.gov.my</a>, costs RM 10</li>
+            </ul>
+            <h4>Application fee</h4>
+            <p><strong>RM 300–600</strong> (Category III), paid online at submission. Non-refundable.</p>
+            <h4>Processing time</h4>
+            <p>Typically <strong>10–20 working days</strong> from submission date. Syrian national cases may take slightly longer due to nationality verification — budget 20–30 working days. Track status online at <a href="https://esd.imi.gov.my" target="_blank" style="color:var(--teal);">esd.imi.gov.my</a>.</p>
+            <div class="alert al-yellow" style="margin-top:.6rem;"><span class="ico">💡</span><div>Submit documents in <strong>PDF format only</strong>. File size limit per document is typically 2MB. Merge multi-page documents into a single PDF before uploading. Blurry or incomplete scans are a common reason for rejection.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <button class="exp-header" onclick="expand(this)">
+          <span class="exp-icon">🪪</span>
+          <div class="exp-header-text"><h3>Syrian Passport — 3 Scenarios &amp; What To Do</h3><p>Critical: most Syrians have passport issues — here is how to handle each case</p></div>
+          <span class="exp-status st-now">READ CAREFULLY</span>
+          <span class="exp-arrow">▼</span>
+        </button>
+        <div class="exp-body">
+          <div class="exp-body-inner">
+            <h4>Scenario 1 — Valid Syrian Passport ✅</h4>
+            <p>Best case. Upload the bio page as the primary identity document. Proceed normally.</p>
+            <h4>Scenario 2 — Expired Syrian Passport ⚠️</h4>
+            <p>Submit the expired passport anyway — ESD accepts it as identity evidence. Additionally provide:</p>
+            <ul>
+              <li>Expired passport bio page (still required for identity)</li>
+              <li>Current UNHCR Refugee Card</li>
+              <li>UNHCR RSD Decision Letter</li>
+              <li>Confirmation letter from UNHCR Malaysia — call <strong>+603-2141-0082</strong> to request one, or visit <a href="https://www.unhcr.org/my" target="_blank" style="color:var(--teal);">UNHCR Malaysia office</a> at Wisma UN, Jalan Dungun, Damansara Heights, KL</li>
+              <li>Cover letter from Maple Home explaining the passport situation and affirming employer responsibility</li>
+            </ul>
+            <p>To renew a Syrian passport in Malaysia, contact the <strong>Embassy of Syria in Kuala Lumpur</strong>:<br>
+            Address: No. 18, Jalan Kedah, off Jalan Ampang, 50450 Kuala Lumpur<br>
+            Tel: <strong>+603-4251-1600</strong></p>
+            <h4>Scenario 3 — No Passport At All ❌ (hardest case)</h4>
+            <ul>
+              <li>Request a <strong>UNHCR Attestation Letter</strong> specifically stating identity and refugee status — this serves as the primary identity document</li>
+              <li>Request a <strong>UNHCR Travel Document</strong> if available (issued under 1951 Refugee Convention principles, though Malaysia is not a signatory — UNHCR Malaysia may still issue this)</li>
+              <li>Submit a detailed <strong>cover letter from Maple Home</strong> to ESD explaining: (a) why no passport exists, (b) the worker's established 7-year presence in Malaysia, (c) employer undertaking full responsibility</li>
+              <li>Call ESD directly — <strong>+603-8000 8000</strong> — to ask what substitute documents they accept for Syrian nationals specifically before submitting</li>
+              <li>Consider engaging an immigration lawyer for this scenario (see <a href="#cheaper" style="color:var(--teal);">contacts</a>)</li>
+            </ul>
+            <div class="alert al-yellow" style="margin-top:.5rem;"><span class="ico">💡</span><div>ESD has processed Syrian EP applications before (Syrians were legally employed in Malaysia under the 2015 PPSMS scheme). They are familiar with the documentation challenges. A strong employer cover letter and complete UNHCR documentation compensates for passport issues in most cases.</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PHASE 4: APPROVAL -->
+  <div class="phase-content" id="phase-4">
+    <div class="alert al-green"><span class="ico">✅</span><div>ESD emails the employer via ePASS when the EP is approved. From that point you have a limited window to complete the remaining steps before the approval lapses. Do not delay.<br><small>📎 Track status at: <a href="https://esd.imi.gov.my" target="_blank" style="color:var(--teal);">esd.imi.gov.my</a></small></div></div>
+    <div class="exp-grid">
+
+      <div class="exp-card">
+        <button class="exp-header" onclick="expand(this)">
+          <span class="exp-icon">🎉</span>
+          <div class="exp-header-text"><h3>Receive Approval &amp; Complete EP Issuance</h3><p>What to do immediately after ESD approves</p></div>
+          <span class="exp-status st-done">AFTER APPROVAL</span>
+          <span class="exp-arrow">▼</span>
+        </button>
+        <div class="exp-body">
+          <div class="exp-body-inner">
+            <h4>Step 1 — Receive the Approval Notification</h4>
+            <p>ESD sends an approval notification to the employer's ePASS account. Log in, download and print the <strong>EP Approval Letter</strong>. This letter is the worker's legal authority to work while the physical EP sticker is being processed — he must carry it at all times.</p>
+            <h4>Step 2 — Pay the EP Issuance Fee</h4>
+            <p>Pay the issuance fee online via ePASS (included in the RM 300–600 or a separate charge — the portal will indicate the exact amount). Payment is by credit/debit card or FPX.</p>
+            <h4>Step 3 — Book Immigration Appointment for EP Sticker</h4>
+            <p>The EP sticker (endorsement in travel document) is placed at the nearest <strong>Immigration Department (Jabatan Imigresen Malaysia)</strong> office. Book an appointment via:</p>
+            <ul>
+              <li>Online: <a href="https://www.imi.gov.my" target="_blank" style="color:var(--teal);">imi.gov.my</a> → e-services → appointment booking</li>
+              <li>Or call the Immigration Department: <strong>+603-8000 8000</strong></li>
+            </ul>
+            <p><strong>KL Immigration offices (nearest to Maple Home operations):</strong></p>
+            <ul>
+              <li><strong>Imigresen KL (HQ)</strong> — Jalan Duta, 50480 Kuala Lumpur. Tel: +603-6205-4422</li>
+              <li><strong>Imigresen Putrajaya</strong> — Persiaran Perdana, Presint 2, 62100 Putrajaya</li>
+              <li><strong>ESD One-Stop Centre</strong> — Level 1–3, Block D, Pusat Bandar Damansara, 50490 KL (handles EP-specific matters)</li>
+            </ul>
+            <h4>What to bring to the immigration appointment</h4>
+            <ul>
+              <li>EP Approval Letter (printed)</li>
+              <li>Passport or travel document (for sticker placement)</li>
+              <li>For Syrian with no passport: bring UNHCR card + UNHCR letter + EP approval letter. Immigration officer will advise on alternative endorsement format.</li>
+              <li>Original company letter confirming employment</li>
+            </ul>
+            <h4>EP sticker / endorsement processing time</h4>
+            <p>Same-day or next working day at the immigration office. The worker is legally employed from the date on the Approval Letter — the sticker is the physical evidence.</p>
+            <div class="alert al-blue" style="margin-top:.5rem;"><span class="ico">ℹ️</span><div>Keep a certified copy of the EP Approval Letter at the Maple Home office. Under the Immigration Act, the employer must be able to produce employment documentation during any inspection.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <button class="exp-header" onclick="expand(this)">
+          <span class="exp-icon">🏥</span>
+          <div class="exp-header-text"><h3>Medical Insurance — Employer Must Provide Before EP Is Active</h3><p>Mandatory for all EP holders — ESD checks at renewal</p></div>
+          <span class="exp-status st-req">REQUIRED</span>
+          <span class="exp-arrow">▼</span>
+        </button>
+        <div class="exp-body">
+          <div class="exp-body-inner">
+            <p>Under ESD guidelines, all EP holders must have valid medical and hospitalisation insurance arranged by the employer. This is verified at each renewal.</p>
+            <h4>Minimum coverage required</h4>
+            <ul>
+              <li>Medical and hospitalisation coverage</li>
+              <li>Minimum sum insured: <strong>RM 10,000–20,000 per year</strong> (confirm exact current figure at <a href="https://esd.imi.gov.my" target="_blank" style="color:var(--teal);">esd.imi.gov.my</a>)</li>
+              <li>Policy must name the employee specifically by name and passport/UNHCR number</li>
+              <li>Policy must be valid for the full duration of the EP</li>
+            </ul>
+            <h4>Where to get quotes</h4>
+            <ul>
+              <li><a href="https://www.aia.com.my" target="_blank" style="color:var(--teal);">AIA Malaysia — aia.com.my</a></li>
+              <li><a href="https://www.prudential.com.my" target="_blank" style="color:var(--teal);">Prudential Malaysia — prudential.com.my</a></li>
+              <li><a href="https://www.etiqa.com.my" target="_blank" style="color:var(--teal);">Etiqa Insurance — etiqa.com.my</a></li>
+              <li>Any Bank Negara-licensed insurer in Malaysia — check the full list at <a href="https://www.bnm.gov.my" target="_blank" style="color:var(--teal);">bnm.gov.my</a></li>
+            </ul>
+            <p>Typical cost: <strong>RM 800–2,000/year</strong>. Get at least 3 quotes. Some insurers do not cover refugee-status employees — specify his status when requesting quotes and confirm acceptance before purchasing.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PHASE 5: ONGOING -->
+  <div class="phase-content" id="phase-5">
+    <div class="alert al-blue"><span class="ico">ℹ️</span><div>After the EP is issued, there are ongoing obligations Maple Home must maintain throughout the EP validity period.</div></div>
+    <div class="exp-grid">
+
+      <div class="exp-card">
+        <button class="exp-header" onclick="expand(this)">
+          <span class="exp-icon">🔁</span>
+          <div class="exp-header-text"><h3>EP Renewal (Every 1–2 Years)</h3><p>EP Cat III is issued in 12-month increments, max 5 years total</p></div>
+          <span class="exp-status st-now">RECURRING</span>
+          <span class="exp-arrow">▼</span>
+        </button>
+        <div class="exp-body">
+          <div class="exp-body-inner">
+            <ul>
+              <li>EP Category III: issued in <strong>12-month validity periods</strong></li>
+              <li>Apply for renewal at least <strong>3 months before expiry</strong> via ePASS</li>
+              <li>At each renewal: submit an <strong>updated Succession Plan</strong> showing progress against original milestones</li>
+              <li>Provide updated payroll records, SOCSO, EPF contributions</li>
+              <li>Maximum cumulative total: <strong>5 years</strong> — after that the role must be held by a Malaysian</li>
+              <li>After 5 years, if you wish to continue employing him: raise salary to RM 10,000+ and apply for Category II (no tenure cap)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <button class="exp-header" onclick="expand(this)">
+          <span class="exp-icon">📊</span>
+          <div class="exp-header-text"><h3>Ongoing HR Compliance</h3><p>What Maple Home must maintain throughout the EP period</p></div>
+          <span class="exp-status st-now">ONGOING</span>
+          <span class="exp-arrow">▼</span>
+        </button>
+        <div class="exp-body">
+          <div class="exp-body-inner">
+            <h4>Monthly obligations</h4>
+            <ul>
+              <li><strong>Pay salary on time</strong> — bank transfer preferred; keep payslips every month. ESD may request 3–6 months of payslips at renewal.</li>
+              <li><strong>SOCSO contributions (mandatory)</strong> — employer pays 1.75%, employee pays 0.5%, capped at RM 5,000 salary. Submit monthly via <a href="https://www.perkeso.gov.my" target="_blank" style="color:var(--teal);">perkeso.gov.my</a> or employer portal. EP holders fall under <em>Employment Injury Scheme only</em> (not Invalidity Pension). Reference: <a href="https://www.perkeso.gov.my" target="_blank" style="color:var(--teal);">Akta Kerja 1969, SOCSO Act — perkeso.gov.my</a></li>
+              <li><strong>EPF contributions (voluntary for EP holders)</strong> — not legally required. If offered: employer pays RM 5/month flat rate, employee pays 11% voluntarily. Reference: <a href="https://www.kwsp.gov.my" target="_blank" style="color:var(--teal);">EPF Act 1991, Second Schedule — kwsp.gov.my</a></li>
+              <li><strong>PCB / Monthly Tax Deduction (MTD)</strong> — deduct income tax from salary and remit to LHDN monthly via <a href="https://www.hasil.gov.my" target="_blank" style="color:var(--teal);">e-PCB at hasil.gov.my</a>. EP holders are taxable residents after 182+ days in Malaysia.</li>
+            </ul>
+            <h4>Annual obligations</h4>
+            <ul>
+              <li><strong>Renew EP</strong> at least 3 months before expiry via <a href="https://esd.imi.gov.my" target="_blank" style="color:var(--teal);">esd.imi.gov.my</a> — upload updated payslips, succession plan progress report, and current insurance policy</li>
+              <li><strong>Renew medical insurance</strong> — policy must remain valid throughout EP period</li>
+              <li><strong>Submit updated succession plan progress</strong> at each renewal — show actual training completed vs. planned milestones</li>
+              <li><strong>Provide 3 paid internships</strong> (1:3 policy, from January 2026) — register on <a href="https://www.myinternship.com.my" target="_blank" style="color:var(--teal);">myinternship.com.my</a> (TalentCorp portal). Reference: <a href="https://www.talentcorp.com.my" target="_blank" style="color:var(--teal);">TalentCorp Malaysia — talentcorp.com.my</a></li>
+              <li><strong>Employee files income tax return</strong> — Form BE or M via <a href="https://www.hasil.gov.my" target="_blank" style="color:var(--teal);">e-Filing at hasil.gov.my</a></li>
+            </ul>
+            <h4>Notifications to ESD (mandatory, time-sensitive)</h4>
+            <ul>
+              <li><strong>Within 14 days</strong>: notify ESD if worker resigns, is terminated, or abandons employment</li>
+              <li><strong>Before any change</strong>: notify ESD if job title, salary, or role scope changes (requires a "Change of Particulars" submission on ePASS)</li>
+              <li><strong>Do not</strong> allow the worker to work for any other employer — EP is employer-specific</li>
+            </ul>
+            <p><small>📎 Reference: Immigration Act 1959/63, Regulation 16 (employer obligations) — <a href="https://www.imi.gov.my" target="_blank" style="color:var(--teal);">imi.gov.my</a></small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <button class="exp-header" onclick="expand(this)">
+          <span class="exp-icon">🔼</span>
+          <div class="exp-header-text"><h3>Path Beyond 5 Years — Category II Upgrade</h3><p>How to keep him after EP Cat III expires</p></div>
+          <span class="exp-status st-todo">FUTURE PLAN</span>
+          <span class="exp-arrow">▼</span>
+        </button>
+        <div class="exp-body">
+          <div class="exp-body-inner">
+            <p>EP Category III has a 5-year maximum. If Maple Home wants to retain him beyond that:</p>
+            <ul>
+              <li>Promote him to <strong>Operations Manager</strong> or <strong>Senior Operations Executive</strong></li>
+              <li>Increase salary to <strong>RM 10,000+/month</strong> (Category II threshold)</li>
+              <li>Apply for a new <strong>EP Category II</strong> — no hard tenure cap, renewable up to 10 years</li>
+              <li>Succession plan required for Cat II too — update accordingly</li>
+            </ul>
+            <p>Plan this promotion in Year 3–4 so the new EP application is ready before the Cat III expires.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div><!-- end section -->
+</div>
+
+<!-- DOCUMENTS -->
+<div class="wrap section" id="documents">
+  <div class="sec-title">Complete Document Checklist</div>
+  <p class="sec-sub">Every document needed for the EP application. Red = mandatory. Yellow = strongly recommended.</p>
+
+  <div class="g2" style="margin-top:.8rem;">
+    <div>
+      <h4 style="color:var(--navy);font-size:.95rem;font-weight:700;margin-bottom:.6rem;">🏢 Maple Home Company Documents</h4>
+      <div class="doc-list">
+        <div class="doc-item required"><div><strong>SSM Certificate of Incorporation</strong><span>Form 9 (private company) or Form 13 — from Companies Commission of Malaysia (Suruhanjaya Syarikat Malaysia)</span></div></div>
+        <div class="doc-item required"><div><strong>SSM Business Profile (mySSminfo)</strong><span>Latest print — shows directors, share structure, company status. Download from mycoID.ssm.com.my</span></div></div>
+        <div class="doc-item required"><div><strong>Latest Audited Financial Statements</strong><span>Most recent 1–2 years. Shows company is financially able to pay the salary. Audited by a registered auditor.</span></div></div>
+        <div class="doc-item required"><div><strong>Income Tax Registration (LHDN)</strong><span>Company tax file number and latest tax return acknowledgement</span></div></div>
+        <div class="doc-item required"><div><strong>SOCSO Employer Account (PERKESO)</strong><span>Shows you have Malaysian employees. Print statement showing contributions for the past 3 months.</span></div></div>
+        <div class="doc-item required"><div><strong>EPF Employer Account (KWSP)</strong><span>Monthly EPF contribution records — confirms payroll is genuine</span></div></div>
+        <div class="doc-item required"><div><strong>Signed Employment Offer Letter</strong><span>On company letterhead. States: job title (Operations Executive), basic salary (RM X,XXX), start date, duration (EP period)</span></div></div>
+        <div class="doc-item required"><div><strong>Job Description Document</strong><span>Detailed responsibilities, skills required, qualifications. Use the template in the Templates section.</span></div></div>
+        <div class="doc-item required"><div><strong>Local Job Ad Evidence</strong><span>Screenshot of MyFutureJobs / JobStreet posting + HR memo that no qualified Malaysian was found</span></div></div>
+        <div class="doc-item required"><div><strong>Organisation Chart</strong><span>Shows where the Operations Executive role sits in Maple Home's structure. Include names of reporting manager and team.</span></div></div>
+        <div class="doc-item required"><div><strong>Succession Plan</strong><span>Signed by Director. See template below. PDF format, on company letterhead.</span></div></div>
+        <div class="doc-item optional"><div><strong>Business Licence / MOTAC Registration</strong><span>If Maple Home holds a tourism/hospitality licence from MOTAC (Ministry of Tourism), include it — strengthens credibility</span></div></div>
+        <div class="doc-item optional"><div><strong>Company Bank Statement (3 months)</strong><span>Shows active business transactions and financial health. Sometimes requested by ESD.</span></div></div>
+      </div>
+    </div>
+    <div>
+      <h4 style="color:var(--navy);font-size:.95rem;font-weight:700;margin-bottom:.6rem;">🧑 Syrian Worker's Documents</h4>
+      <div class="doc-list">
+        <div class="doc-item required"><div><strong>UNHCR Refugee Card</strong><span>Current, not expired. Front and back, clear scan. This is the primary identity document if no valid passport.</span></div></div>
+        <div class="doc-item required"><div><strong>UNHCR RSD Decision Letter</strong><span>The Refugee Status Determination letter confirming he is a recognised refugee. Must be original or certified copy.</span></div></div>
+        <div class="doc-item required"><div><strong>Syrian Passport</strong><span>Even if expired — submit it. Bio page clear scan. If completely unavailable, see special consideration in Phase 3.</span></div></div>
+        <div class="doc-item optional"><div><strong>DPP Card (if he has registered)</strong><span>The new Malaysian government refugee registration card (Dokumen Pendaftaran Pelarian, Jan 2026). Include if he has it.</span></div></div>
+        <div class="doc-item required"><div><strong>Educational Certificates</strong><span>University degree, diploma, vocational certificates. All translated to English or Malay by a certified translator if original is in Arabic.</span></div></div>
+        <div class="doc-item optional"><div><strong>IT / Design Certifications</strong><span>Any relevant certs: CompTIA, Google Analytics, Canva, Adobe, PMS systems, etc. Strengthens the application.</span></div></div>
+        <div class="doc-item required"><div><strong>Passport-Size Photographs</strong><span>4 recent photos, white background, 35mm × 50mm. Taken within the last 6 months.</span></div></div>
+        <div class="doc-item required"><div><strong>Curriculum Vitae (CV)</strong><span>In English. Include all work experience, especially any operations, IT, or design work. List the Maple Home role prominently.</span></div></div>
+        <div class="doc-item optional"><div><strong>Police Clearance (Malaysia)</strong><span>Obtainable from Royal Malaysia Police (PDRM) online portal. Takes 3–5 days. Strongly recommended to include proactively.</span></div></div>
+        <div class="doc-item optional"><div><strong>Reference Letter from UNHCR Malaysia</strong><span>A letter confirming refugee status — obtainable from UNHCR Malaysia office. Useful context for ESD reviewers.</span></div></div>
+        <div class="doc-item optional"><div><strong>Marriage Certificate (if applicable)</strong><span>If bringing a spouse to Malaysia, include for future dependent pass application.</span></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COSTS -->
+<div style="background:#fff;border-top:1px solid var(--border);">
+<div class="wrap section" id="costs">
+  <div class="sec-title">Full Cost Breakdown</div>
+  <p class="sec-sub">All costs Maple Home must budget for. One-time and recurring.</p>
+
+  <div class="g2" style="margin-top:.8rem;">
+    <div>
+      <h4 style="color:var(--navy);font-size:.95rem;font-weight:700;margin-bottom:.6rem;">💵 One-Time / Application Costs</h4>
+      <table class="ctbl">
+        <thead><tr><th>Item</th><th>Amount (RM)</th><th>Who Pays</th></tr></thead>
+        <tbody>
+          <tr><td>ESD company registration fee</td><td class="cost-lo">Free</td><td>Employer</td></tr>
+          <tr><td>EP application fee (Cat III)</td><td><strong>RM 300–600</strong></td><td>Employer</td></tr>
+          <tr><td>Document translation (Arabic → English)</td><td>RM 100–300 per doc</td><td>Employer or Employee</td></tr>
+          <tr><td>Police clearance (PDRM)</td><td class="cost-lo">RM 10</td><td>Employee</td></tr>
+          <tr><td>Passport-size photos</td><td class="cost-lo">RM 15–25</td><td>Employee</td></tr>
+          <tr><td>MyFutureJobs job posting</td><td class="cost-lo">Free</td><td>Employer</td></tr>
+          <tr><td>Immigration appointment (EP sticker)</td><td class="cost-lo">RM 60–120</td><td>Employer</td></tr>
+          <tr><td>Immigration lawyer fee (optional)</td><td>RM 1,500–4,000</td><td>Employer</td></tr>
+          <tr class="total-row"><td>ONE-TIME TOTAL (estimated)</td><td>RM 2,000–5,500</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h4 style="color:var(--navy);font-size:.95rem;font-weight:700;margin-bottom:.6rem;">🔁 Recurring Annual Costs</h4>
+      <table class="ctbl">
+        <thead><tr><th>Item</th><th>Amount (RM/year)</th><th>Who Pays</th></tr></thead>
+        <tbody>
+          <tr><td>Salary (basic minimum)</td><td><strong>RM 60,000–78,000</strong><br><small>(RM 5,000–6,500 × 12)</small></td><td>Employer</td></tr>
+          <tr style="opacity:.55;"><td>EPF — employer share (13%)<br><small style="color:#c0392b;font-weight:600;">⚠ NOT mandatory for EP holders — voluntary only</small></td><td><s>RM 7,800–10,140</s><br><strong style="color:#059669;">RM 0 required</strong></td><td>Employer</td></tr>
+          <tr><td>SOCSO — employer share (1.75%)<br><small>Employment Injury Scheme only for EP holders</small></td><td>RM 1,050 <small>(capped)</small></td><td>Employer</td></tr>
+          <tr><td>Medical / health insurance</td><td>RM 800–2,000</td><td>Employer</td></tr>
+          <tr><td>EP renewal fee (annual)</td><td>RM 300–600</td><td>Employer</td></tr>
+          <tr><td>3 intern allowances (1:3 policy)</td><td>RM 1,800–5,400<br><small>(RM 500–1,500 × 3 × 4 months)</small></td><td>Employer</td></tr>
+          <tr class="total-row"><td>ANNUAL TOTAL (excl. EPF)</td><td class="cost-hi">RM 63,950–87,050</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="alert al-green" style="margin-top:1rem;">
+    <span class="ico">✅</span>
+    <div><strong>Real cost per month for Maple Home (EPF excluded — not mandatory for EP holders):</strong> At RM 5,000 salary, total employer cost is approximately <strong>RM 5,330–5,760/month</strong> — only <strong>RM 330–760/month above salary</strong>. At RM 6,500 salary, approximately <strong>RM 6,930–7,560/month</strong>. EPF may be offered voluntarily as a benefit to attract talent but is not legally required.</div>
+  </div>
+</div>
+</div>
+
+<!-- CHEAPER OPTIONS -->
+<div class="wrap section" id="cheaper">
+  <div class="sec-title">Cheaper Ways to Hire Him</div>
+  <p class="sec-sub">EP Category III is not the only path. Depending on his current immigration status, there may be significantly cheaper legal options.</p>
+
+  <div class="alert al-blue" style="margin-bottom:1.2rem;">
+    <span class="ico">ℹ️</span>
+    <div>Check these options <strong>in order</strong> — Option A costs Maple Home almost nothing. Only proceed to EP if the cheaper paths are unavailable.</div>
+  </div>
+
+  <div class="exp-grid">
+
+    <!-- OPTION A: DPP -->
+    <div class="exp-card">
+      <button class="exp-header" onclick="expand(this)">
+        <span class="exp-icon">🔴</span>
+        <div class="exp-header-text">
+          <h3>Option A — DPP Card (Not Available Yet for Community Refugees)</h3>
+          <p>Launched January 2026 but Phase 1 covers detention centres only — community registration has no confirmed date</p>
+        </div>
+        <span class="exp-status" style="background:#fee2e2;color:#7f1d1d;">NOT YET AVAILABLE</span>
+        <span class="exp-arrow">▼</span>
+      </button>
+      <div class="exp-body">
+        <div class="exp-body-inner">
+          <h4>What is DPP?</h4>
+          <p>The <strong>Dokumen Pendaftaran Pelarian (DPP)</strong> is Malaysia's government refugee registration document, launched 1 January 2026 to replace reliance on UNHCR cards. It is managed by the Ministry of Home Affairs (MOHA) / Jabatan Imigresen Malaysia.</p>
+          <p><small>📎 Source: <a href="https://www.moha.gov.my" target="_blank" style="color:var(--teal);">MOHA official — moha.gov.my</a> | <a href="https://www.facebook.com/kementeriandalamnegeri" target="_blank" style="color:var(--teal);">MOHA Facebook (official updates)</a></small></p>
+          <h4>Current status as of May 2026 — 3 key facts</h4>
+          <ul>
+            <li><strong>Phase 1 only:</strong> Registration is currently limited to refugees held in <strong>immigration detention centres</strong>. Community-based refugees (like someone living freely in KL) cannot register yet.</li>
+            <li><strong>No community registration date announced:</strong> There is no confirmed date for when community refugees can register. Refugeemalaysia.org has explicitly warned that any announcement circulating about "Syrian/Yemeni DPP registration starting on [date]" are <strong>scams</strong> — not legitimate.</li>
+            <li><strong>Work rights not yet confirmed:</strong> Even once registered, DPP may not immediately grant work rights. A February 2026 FMT article states the DPP <em>"may not immediately confer work rights"</em> — that framework is still being developed by the Human Resources Ministry.</li>
+          </ul>
+          <h4>Possible future benefit (if/when available)</h4>
+          <p>If the Syrian worker eventually registers under DPP <em>and</em> work rights are granted for services sector, Maple Home would not need to sponsor an EP. That would eliminate: EP fees, succession plan, and 1:3 internship mandate. Keep monitoring for updates.</p>
+          <h4>How to monitor official updates</h4>
+          <ul>
+            <li>Follow <a href="https://www.facebook.com/kementeriandalamnegeri" target="_blank" style="color:var(--teal);">MOHA official Facebook page</a> — all DPP announcements are posted here first</li>
+            <li>Contact UNHCR Malaysia: <strong>+603-2141-0082</strong> or <a href="https://www.unhcr.org/my" target="_blank" style="color:var(--teal);">unhcr.org/my</a></li>
+            <li>Check <a href="https://refugeemalaysia.org" target="_blank" style="color:var(--teal);">refugeemalaysia.org</a> for NGO updates and warnings about scams</li>
+            <li>Contact Jabatan Imigresen: <strong>+603-8000 8000</strong> or <a href="https://www.imi.gov.my" target="_blank" style="color:var(--teal);">imi.gov.my</a></li>
+          </ul>
+          <div class="alert al-red" style="margin-top:.8rem;">
+            <span class="ico">🚫</span>
+            <div><strong>Do not rely on DPP for Maple Home's current hiring decision.</strong> It is not a usable path today. Proceed with EP Cat III or IMM13 (if available). Check DPP status again in 6 months.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION B: IMM13 -->
+    <div class="exp-card">
+      <button class="exp-header" onclick="expand(this)">
+        <span class="exp-icon">🟡</span>
+        <div class="exp-header-text">
+          <h3>Option B — IMM13 Permit Renewal (~RM 150/year)</h3>
+          <p>Only if he currently holds an IMM13 — check before applying for EP</p>
+        </div>
+        <span class="exp-status" style="background:#fef3c7;color:#78350f;">IF AVAILABLE</span>
+        <span class="exp-arrow">▼</span>
+      </button>
+      <div class="exp-body">
+        <div class="exp-body-inner">
+          <h4>What is IMM13?</h4>
+          <p>The <strong>IMM13</strong> is a special permit issued under Section 55(1) of the Immigration Act 1959/63, historically granted to Syrian refugees in Malaysia under the 2015 PPSMS programme. It gives the holder legal residency and the right to work.</p>
+          <h4>How it helps Maple Home</h4>
+          <p>If the worker already has an IMM13, Maple Home does not need to sponsor any immigration document at all. He renews the IMM13 himself annually. Maple Home just employs him with a normal contract — same as DPP, essentially no sponsorship burden.</p>
+          <h4>What to do</h4>
+          <ul>
+            <li>Ask the worker: does he currently hold an IMM13 card? Check the physical document.</li>
+            <li>If yes: confirm the expiry date and renew at the nearest Immigration office before it lapses</li>
+            <li>Renewal fee: approximately <strong>RM 90–150/year</strong></li>
+            <li>If it has lapsed: reinstatement may be possible but is discretionary — consult an immigration lawyer</li>
+          </ul>
+          <div class="alert al-red" style="margin-top:.8rem;">
+            <span class="ico">⚠️</span>
+            <div><strong>Important:</strong> IMM13 is being gradually replaced by DPP. Future renewals are not guaranteed. If he is currently on IMM13, use this option now but also start the DPP registration process in parallel as a longer-term solution.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTION C: Track B VP(TE) -->
+    <div class="exp-card">
+      <button class="exp-header" onclick="expand(this)">
+        <span class="exp-icon">🔵</span>
+        <div class="exp-header-text">
+          <h3>Option C — Foreign Worker VP(TE) for Housekeeping/Maintenance (~RM 1,000–1,500/year)</h3>
+          <p>Much cheaper than EP but requires a different job title</p>
+        </div>
+        <span class="exp-status" style="background:#dbeafe;color:#1e3a8a;">TITLE CHANGE NEEDED</span>
+        <span class="exp-arrow">▼</span>
+      </button>
+      <div class="exp-body">
+        <div class="exp-body-inner">
+          <h4>How this works</h4>
+          <p>Service apartments can apply for a <strong>foreign worker quota</strong> under the Track B / FWCMS system for roles classified as 3D (dirty, dangerous, difficult) — specifically housekeeping, cleaning, and facilities maintenance. The worker gets a <strong>Visit Pass (Temporary Employment) — VP(TE)</strong> instead of an Employment Pass.</p>
+          <h4>Cost comparison vs EP</h4>
+          <table class="ctbl">
+            <thead><tr><th>Item</th><th>VP(TE) Track B</th><th>EP Cat III</th></tr></thead>
+            <tbody>
+              <tr><td>Annual levy</td><td style="color:#059669;font-weight:700;">RM 640/year</td><td>N/A (no levy for EP)</td></tr>
+              <tr><td>FOMEMA medical</td><td>RM 180 (one-time)</td><td>Not required</td></tr>
+              <tr><td>Application/quota fee</td><td>RM 200–500</td><td>RM 300–600</td></tr>
+              <tr><td>Succession plan</td><td style="color:#059669;font-weight:700;">Not required</td><td>Mandatory</td></tr>
+              <tr><td>1:3 internship mandate</td><td style="color:#059669;font-weight:700;">Not required</td><td>Mandatory</td></tr>
+              <tr><td>Minimum salary</td><td>Market rate / minimum wage</td><td>RM 5,000/month</td></tr>
+              <tr class="total-row"><td>Annual cost (ex-salary)</td><td style="color:#059669;font-weight:700;">~RM 1,000–1,500</td><td>~RM 3,950–9,050</td></tr>
+            </tbody>
+          </table>
+          <h4>The trade-off</h4>
+          <p>To use this route, his official job title must match the approved 3D categories — e.g. <strong>Housekeeping Supervisor</strong>, <strong>Facilities Maintenance Coordinator</strong>, or <strong>Property Maintenance Technician</strong>. He cannot be listed as "Operations Executive" on a VP(TE). If Maple Home is comfortable with this title change and the lower-skilled visa category, this is a big cost saving.</p>
+          <div class="alert al-yellow" style="margin-top:.8rem;">
+            <span class="ico">💡</span>
+            <div>VP(TE) is a lower-tier permit — no path to PR, no direct upgrade to EP without a fresh application. If you intend to retain him long-term in a senior operations role, EP is the better foundation. VP(TE) is best if his actual daily work is mainly physical/maintenance.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPARISON SUMMARY -->
+    <div class="exp-card">
+      <button class="exp-header" onclick="expand(this)">
+        <span class="exp-icon">📊</span>
+        <div class="exp-header-text">
+          <h3>Side-by-Side Comparison — All 4 Options</h3>
+          <p>Quick reference to decide which path to pursue</p>
+        </div>
+        <span class="exp-arrow">▼</span>
+      </button>
+      <div class="exp-body">
+        <div class="exp-body-inner">
+          <table class="ctbl">
+            <thead><tr><th>Option</th><th>Employer extra cost/month</th><th>Job title kept?</th><th>Succession plan?</th><th>Internships?</th><th>Stability</th></tr></thead>
+            <tbody>
+              <tr><td><strong>A — DPP</strong></td><td style="color:#059669;font-weight:700;">~RM 160–260</td><td>Yes</td><td>No</td><td>No</td><td>Medium (sectors TBC)</td></tr>
+              <tr><td><strong>B — IMM13</strong></td><td style="color:#059669;font-weight:700;">~RM 170–270</td><td>Yes</td><td>No</td><td>No</td><td>Low (being phased out)</td></tr>
+              <tr><td><strong>C — VP(TE)</strong></td><td style="color:#059669;font-weight:700;">~RM 85–125</td><td>No — must change</td><td>No</td><td>No</td><td>Medium (no upgrade path)</td></tr>
+              <tr><td><strong>EP Cat III</strong></td><td>~RM 330–760</td><td>Yes</td><td>Yes</td><td>Yes</td><td>High (5-yr EP, upgradeable)</td></tr>
+            </tbody>
+          </table>
+          <div class="alert al-green" style="margin-top:.8rem;">
+            <span class="ico">✅</span>
+            <div><strong>Recommended order:</strong> Check DPP first → check IMM13 → if neither available, do EP Cat III (correct the EPF misconception — real extra cost is only RM 330–760/month above salary, not RM 6–7k).</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- JOB TITLE -->
+<div class="wrap section" id="job-title">
+  <div class="sec-title">The Right Job Title</div>
+  <p class="sec-sub">Why Operations Executive is the correct honest title — and how to write a role that uses all his skills.</p>
+
+  <div class="g3" style="margin-top:.8rem;">
+    <div class="mini-card">
+      <div class="mc-icon">✅</div>
+      <h4>Operations Executive</h4>
+      <p>Best choice. Honest, professional, qualifies for EP Cat III in services sector. Broad enough to include IT and design tasks naturally within an operations context.</p>
+      <span class="tag tg">RECOMMENDED</span>
+    </div>
+    <div class="mini-card">
+      <div class="mc-icon">✅</div>
+      <h4>Property Operations Executive</h4>
+      <p>More specific to service apartments. Also valid for Cat III. Use if you want to emphasise the property/hospitality angle.</p>
+      <span class="tag tg">ALSO VALID</span>
+    </div>
+    <div class="mini-card">
+      <div class="mc-icon">❌</div>
+      <h4>IT Executive / Designer</h4>
+      <p>Do not use these if his primary work is operations. Misrepresenting the role to ESD is document fraud — EP can be cancelled and company blacklisted.</p>
+      <span class="tag tr">DO NOT USE</span>
+    </div>
+  </div>
+
+  <div class="alert al-green" style="margin-top:1.2rem;">
+    <span class="ico">💡</span>
+    <div><strong>How to include his IT and design skills honestly:</strong> Write the job description to include operational tasks that <em>require</em> IT and design knowledge. In a service apartment context, this is entirely natural — managing PMS software, updating Airbnb/Agoda listings (needs design), CCTV and smart-lock management (needs IT), digital reports and dashboards (needs both). The role title stays "Operations Executive" but the job description shows the multi-skill requirement.</div>
+  </div>
+</div>
+
+<!-- SUCCESSION PLAN -->
+<div style="background:#fff;border-top:1px solid var(--border);">
+<div class="wrap section" id="succession">
+  <div class="sec-title">Succession Plan — Maple Home</div>
+  <p class="sec-sub">A ready-to-use succession plan template specifically for this role at Maple Home. Print on company letterhead, fill in, sign, and upload to ePASS.</p>
+
+  <div class="tpl-box">
+    <pre>
+<span style="color:#93c5fd;font-weight:bold;">LOCAL SUCCESSION PLAN</span>
+<span style="color:#6b7280;">Malaysia Expatriate Employment Policy — EP Category III
+Effective 1 June 2026 | Prepared by Maple Home Sdn Bhd</span>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<span style="color:#fde68a;">PART 1 — COMPANY &amp; ROLE DETAILS</span>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Company Name        : Maple Home Sdn Bhd
+SSM Registration No : [Your SSM No.]
+Date of Plan        : [DD/MM/YYYY]
+Prepared by         : [HR Manager Name], Human Resources
+
+Expatriate Employee : [Syrian Worker Full Name]
+Nationality         : Syrian Arab Republic
+UNHCR Card No.      : [UNHCR Card Number]
+Passport No.        : [Passport No. or "N/A — see UNHCR documentation"]
+EP Category         : Category III
+Proposed Salary     : RM [5,000–6,500] per month (basic)
+Job Title           : Operations Executive
+Department          : Operations
+Reports to          : [Operations Manager / Director Name]
+EP Start Date       : [DD/MM/YYYY]
+EP End Date         : [DD/MM/YYYY — max 5 years from start]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<span style="color:#fde68a;">PART 2 — WHY AN EXPATRIATE IS REQUIRED</span>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Role Description:
+Maple Home Sdn Bhd is Malaysia's largest independent short-stay
+property management company, managing over 2,000 serviced apartment
+units across Kuala Lumpur and Selangor. The Operations Executive
+role requires a rare combination of:
+
+  1. Short-stay property operations experience
+  2. Proficiency with Property Management Systems (PMS), smart
+     lock platforms (e.g. Yale, Igloohome), CCTV systems
+  3. Digital listing management (Airbnb, Agoda, Booking.com,
+     Expedia) including visual content creation
+  4. Guest experience workflow management (check-in/out,
+     housekeeping coordination, maintenance scheduling)
+  5. Operational analytics and reporting
+
+Evidence of Local Recruitment Attempt:
+  • Job posted on MyFutureJobs on [Date] — Ad Reference: [Ref No.]
+  • Job posted on JobStreet on [Date]
+  • [X] applications received over [X] days
+  • No candidate met the combined operations + IT + digital
+    content requirements
+  • Attached: screenshot of job postings, applicant summary
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<span style="color:#fde68a;">PART 3 — IDENTIFIED LOCAL SUCCESSOR</span>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Option A — Successor Already Identified:
+  Name           : [Malaysian Employee Full Name]
+  NRIC No.       : [IC Number]
+  Current Title  : [e.g. Operations Assistant / Admin Executive]
+  Target Title   : Operations Executive (upon full succession)
+  Target Date    : [MM/YYYY — by Year 5 of EP tenure]
+
+Option B — Successor Not Yet Identified:
+  Maple Home commits to recruit a Malaysian Operations Executive
+  trainee by [Q2/Q3 of Year 1]. The role will be posted on
+  MyFutureJobs and JobStreet. Upon hire, the training plan
+  in Part 4 will commence immediately.
+
+Identified Skill Gaps to Address:
+  1. Short-stay property management system operations
+  2. Digital listing content creation and optimisation
+  3. Smart property technology (locks, CCTV, IoT sensors)
+  4. Guest experience management under high-volume conditions
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<span style="color:#fde68a;">PART 4 — TRAINING &amp; KNOWLEDGE TRANSFER SCHEDULE</span>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Activity                           Frequency   Duration   Responsible
+─────────────────────────────────  ──────────  ─────────  ────────────
+Daily operations briefing &amp;         Daily       30 min     Expatriate
+  task handover to successor
+Weekly 1-on-1 mentoring session    Weekly      1 hour     Expatriate
+PMS system training (reports,      Month 1–3   2 hrs/wk   Expatriate
+  dashboards, booking management)
+Smart lock / CCTV system training  Month 1–2   4 sessions Expatriate
+  + vendor relationship handover
+Airbnb/OTA listing management     Month 2–4   Weekly     Expatriate
+  (photography, descriptions,
+  pricing, review responses)
+Housekeeping &amp; maintenance         Month 3–5   Shadowing  Expatriate
+  scheduling workflows
+SOP documentation: expatriate      Ongoing     Monthly    Expatriate
+  writes all key processes
+  in English for company use
+Digital content creation           Month 4–6   Weekly     Expatriate
+  (Canva, basic photo editing,
+  listing images, social posts)
+External course: property mgmt     Year 1      1 course   Company pays
+  or hospitality operations cert
+Internal performance review        Quarterly   1 session  HR + Manager
+  of succession plan progress
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<span style="color:#fde68a;">PART 5 — COMPETENCY MILESTONES</span>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Year 1  [MM/YYYY – MM/YYYY]
+  □ Successor understands all PMS functions and daily reports
+  □ Handles 30% of guest check-in/out operations independently
+  □ Completes external hospitality/property operations course
+  □ HR quarterly review documents progress — filed
+
+Year 2  [MM/YYYY – MM/YYYY]
+  □ Successor manages housekeeping schedule independently
+  □ Handles 50% of Airbnb/OTA listing updates
+  □ Produces 3 key SOPs for operations department
+  □ Runs weekly ops briefing with team under expatriate oversight
+
+Year 3  [MM/YYYY – MM/YYYY]
+  □ Successor leads operations during expatriate leave periods
+  □ Handles 75% of all operational responsibilities independently
+  □ Expatriate role shifts to advisory &amp; training only
+  □ Renewal EP application submitted with updated succession plan
+
+Year 4  [MM/YYYY – MM/YYYY]
+  □ Successor operates full role independently
+  □ Expatriate focuses only on complex or new property onboarding
+  □ All SOPs completed and handed over to company
+
+Year 5  [MM/YYYY – MM/YYYY]
+  □ Full transition complete — local holds role independently
+  □ EP not renewed (or employee promoted to Cat II if warranted)
+  □ Final transition report submitted to ESD
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<span style="color:#fde68a;">PART 6 — HANDOVER &amp; BUSINESS CONTINUITY</span>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Overlap Period      : 3–6 months before end of EP where both
+                      expatriate and local work in role together
+Continuity Assurance: All critical workflows documented as SOPs
+                      held by Maple Home before expatriate departs
+Contingency         : If local successor is not ready by Year 5,
+                      Maple Home will extend by promoting the worker
+                      to Category II (salary RM 10,000+) with a
+                      new EP application and revised succession plan
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<span style="color:#fde68a;">DECLARATION</span>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Maple Home Sdn Bhd confirms this Succession Plan is genuine and
+will be actively implemented. Documentation of all training
+activities will be maintained and made available to ESD upon
+request.
+
+Signed: ___________________________   Date: __________
+Name  : [Director/HR Director Full Name]
+Title : [Managing Director / HR Director]
+       Maple Home Sdn Bhd
+Stamp : [Company Stamp]
+</pre>
+  </div>
+</div>
+</div>
+
+<!-- CHECKLIST -->
+<div class="wrap section" id="checklist">
+  <div class="sec-title">Master Checklist — Before You Submit</div>
+  <p class="sec-sub">Tick off every item before submitting the EP application. Nothing should be missing.</p>
+
+  <div class="prg-w"><div class="prg-b" id="pbar" style="width:0%"></div></div>
+  <p class="prg-l" id="plbl">0 of 18 items completed</p>
+
+  <div class="g2" style="margin-top:1rem;">
+    <div>
+      <h4 style="color:var(--navy);font-size:.93rem;font-weight:700;margin-bottom:.55rem;">🏢 Company Actions</h4>
+      <div class="chklist">
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>Maple Home registered on ePASS / MYXpats portal (esd.imi.gov.my)</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>Expatriate Post Approval obtained from ESD</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>Syrian worker's salary formally set to minimum RM 5,000/month</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>Salary Adjustment / Promotion Letter issued and signed</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>Job Description for "Operations Executive" written and ready</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>Local job ad posted on MyFutureJobs + screenshot saved</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>HR justification memo written (no qualified Malaysian found)</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>Organisation chart updated showing the Operations Executive role</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>Succession Plan written, signed by Director, converted to PDF</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>Medical / health insurance arranged for worker</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>TalentCorp internship registration initiated (1:3 policy)</div>
+      </div>
+    </div>
+    <div>
+      <h4 style="color:var(--navy);font-size:.93rem;font-weight:700;margin-bottom:.55rem;">🧑 Worker Documents Ready</h4>
+      <div class="chklist">
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>UNHCR Refugee Card — current, scanned front &amp; back</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>UNHCR RSD Decision Letter — scanned clear copy</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>Syrian passport (or best available identity document)</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>Educational certificates — translated to English if in Arabic</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>CV in English — includes all relevant work and skills</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>Passport-size photos — 4 copies, white background, recent</div>
+        <div class="ci" onclick="tick(this)"><div class="cb"></div>Police clearance from PDRM (obtain via polis.gov.my)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TEMPLATES -->
+<div style="background:#fff;border-top:1px solid var(--border);">
+<div class="wrap section" id="template">
+  <div class="sec-title">Letter Templates</div>
+  <p class="sec-sub">Print on company letterhead. Replace all [BRACKETS] with actual details.</p>
+
+  <div class="exp-grid">
+
+    <div class="exp-card">
+      <button class="exp-header" onclick="expand(this)">
+        <span class="exp-icon">📄</span>
+        <div class="exp-header-text"><h3>Template 1 — Job Description (Operations Executive)</h3><p>For EP application and job ad</p></div>
+        <span class="exp-arrow">▼</span>
+      </button>
+      <div class="exp-body">
+        <div class="exp-body-inner">
+          <div class="tpl-box">
+<pre>
+JOB DESCRIPTION
+Maple Home Sdn Bhd
+
+Job Title         : Operations Executive
+Department        : Operations
+Reports To        : Operations Manager / Director
+Employment Type   : Full-Time
+Monthly Basic Salary: RM [5,000 – 6,500]
+
+────────────────────────────────────────────
+COMPANY OVERVIEW
+────────────────────────────────────────────
+Maple Home Sdn Bhd is Malaysia's largest independent short-stay
+service apartment management company. We manage 2,000+ units
+across KL and Selangor, delivering hotel-standard experiences
+to guests on Airbnb, Agoda, Booking.com, and other platforms.
+
+────────────────────────────────────────────
+ROLE OVERVIEW
+────────────────────────────────────────────
+The Operations Executive is responsible for the end-to-end
+daily operations of assigned properties, ensuring seamless
+guest experiences, optimal unit performance, and efficient
+coordination across all operational teams. The role requires
+a rare combination of hospitality operations expertise,
+property management system (PMS) proficiency, digital
+content capability, and smart property technology skills.
+
+────────────────────────────────────────────
+KEY RESPONSIBILITIES
+────────────────────────────────────────────
+Operations Management
+• Oversee daily operations of [X] service apartment units
+• Coordinate check-in/check-out processes and guest requests
+• Manage housekeeping scheduling, quality control &amp; inspections
+• Oversee maintenance task assignments and vendor follow-up
+• Handle guest escalations and resolve issues promptly
+
+Technology &amp; Systems
+• Operate and maintain Property Management System (PMS):
+  reservations, reports, occupancy data, pricing inputs
+• Manage smart lock systems (Yale, Igloohome, etc.) —
+  access code generation, battery/device monitoring
+• Oversee CCTV, WiFi, and IoT sensor systems across units
+• Liaise with tech vendors for system issues and upgrades
+
+Digital Listing Management
+• Update and maintain listings on Airbnb, Agoda, Booking.com,
+  Expedia — title, description, pricing, house rules
+• Produce room photography, edit listing images, create
+  digital content using Canva / Adobe tools
+• Monitor and respond to guest reviews across all platforms
+• Analyse occupancy reports and suggest pricing adjustments
+
+Reporting &amp; Administration
+• Produce weekly and monthly operational reports / dashboards
+• Maintain operations SOPs and process documentation
+• Coordinate with finance for revenue reconciliation
+• Assist in onboarding new properties to the Maple Home system
+
+────────────────────────────────────────────
+REQUIRED QUALIFICATIONS &amp; SKILLS
+────────────────────────────────────────────
+• Diploma or Degree in Hospitality, Business, IT, or related
+• Minimum 2–3 years operations experience (service apartment,
+  hotel, or short-stay property management preferred)
+• Proficiency in Property Management Systems (PMS)
+• IT literacy: smart home devices, CCTV, network troubleshoot
+• Digital content skills: Canva, photo editing, OTA platforms
+• Fluent in English (written and spoken); Arabic an advantage
+• Strong organisational and multi-tasking ability
+• Experience in a fast-paced, high-volume hospitality setting
+
+────────────────────────────────────────────
+WHY THIS ROLE REQUIRES A SPECIALIST HIRE
+────────────────────────────────────────────
+This role demands a unique combination of operational, IT, and
+digital content skills in a short-stay hospitality context.
+Despite active recruitment on MyFutureJobs and JobStreet, no
+Malaysian applicant meeting all criteria was identified.
+The combined skill requirement — particularly short-stay PMS
+proficiency, smart property technology, and digital listing
+management — is uncommon in the local labour market.
+
+Prepared by: [HR Manager Name]
+Date: [DD/MM/YYYY]
+</pre>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <button class="exp-header" onclick="expand(this)">
+        <span class="exp-icon">📄</span>
+        <div class="exp-header-text"><h3>Template 2 — HR Justification Letter (No Local Found)</h3><p>Upload with EP application as supporting doc</p></div>
+        <span class="exp-arrow">▼</span>
+      </button>
+      <div class="exp-body">
+        <div class="exp-body-inner">
+          <div class="tpl-box">
+<pre>
+[Maple Home Company Letterhead]
+
+Date: [DD/MM/YYYY]
+To: Expatriate Services Division (ESD)
+    Jabatan Imigresen Malaysia
+
+RE: JUSTIFICATION FOR EXPATRIATE HIRE — OPERATIONS EXECUTIVE
+
+We, Maple Home Sdn Bhd (SSM No. [XXXXXX-X]), write to confirm
+that we have made genuine efforts to recruit a Malaysian citizen
+for the role of Operations Executive prior to engaging a foreign
+national.
+
+RECRUITMENT EFFORTS:
+  Platform     : MyFutureJobs (jobsmalaysia.gov.my)
+  Posted on    : [Date]   |   Closed on: [Date]
+  Applications : [X] received
+
+  Platform     : JobStreet.com.my
+  Posted on    : [Date]   |   Closed on: [Date]
+  Applications : [X] received
+
+OUTCOME:
+Despite receiving applications, no candidate met the full
+requirements for this role, specifically:
+  (a) Hands-on experience with short-stay PMS systems
+  (b) Smart property technology management (smart locks,
+      CCTV, IoT devices in a hospitality context)
+  (c) Digital listing management for OTA platforms with
+      visual content creation capabilities
+
+The combination of these skill sets — hospitality operations,
+IT literacy, and digital content creation in a service apartment
+setting — proved difficult to find in the local market.
+
+PROPOSED HIRE:
+Following our unsuccessful local recruitment, we propose to
+hire [Syrian Worker Full Name], a Syrian national registered
+with UNHCR Malaysia (Card No. [XXXXXX]), who brings [X] years
+of relevant experience combining operations management, IT
+systems, and digital content production.
+
+We are committed to implementing the attached Succession Plan
+to develop a local Malaysian replacement within the EP tenure.
+
+Yours sincerely,
+
+_____________________________
+[Director / HR Director Name]
+Maple Home Sdn Bhd
+[Date]
+[Company Stamp]
+</pre>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <button class="exp-header" onclick="expand(this)">
+        <span class="exp-icon">📄</span>
+        <div class="exp-header-text"><h3>Template 3 — Salary Adjustment / Promotion Letter</h3><p>Required if salary is being increased to meet RM 5,000 minimum</p></div>
+        <span class="exp-arrow">▼</span>
+      </button>
+      <div class="exp-body">
+        <div class="exp-body-inner">
+          <div class="tpl-box">
+<pre>
+[Maple Home Company Letterhead]
+
+Date: [DD/MM/YYYY]
+PRIVATE &amp; CONFIDENTIAL
+
+To: [Syrian Worker Full Name]
+
+SUBJECT: LETTER OF PROMOTION AND SALARY ADJUSTMENT
+
+Dear [First Name],
+
+We are pleased to inform you of your promotion and salary
+adjustment effective [DD/MM/YYYY], as follows:
+
+  Previous Position : [Previous Title, e.g. Operations Staff]
+  New Position      : Operations Executive
+  Department        : Operations
+  Reports To        : [Operations Manager / Director Name]
+
+  Previous Basic Salary : RM [Previous Amount] per month
+  New Basic Salary      : RM [5,000+] per month
+
+This adjustment reflects your contributions to Maple Home
+and your expanded scope of responsibilities as detailed in
+the attached updated Job Description.
+
+All other terms of your employment remain unchanged unless
+otherwise stated in writing.
+
+Please sign and return the duplicate copy of this letter
+as your acceptance of the above terms.
+
+Yours sincerely,
+
+_____________________________       _____________________
+[Director Name]                     Employee Acceptance
+Managing Director / HR Director
+Maple Home Sdn Bhd
+[Company Stamp]                     Date: _______________
+</pre>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end exp-grid -->
+
+  <div style="display:flex;gap:.8rem;margin-top:1.3rem;flex-wrap:wrap;">
+    <button class="print-btn" onclick="window.print()">🖨️ Print This Guide</button>
+  </div>
+</div>
+</div>
+
+<!-- REFERENCES -->
+<div class="wrap section" id="references">
+  <div class="sec-title">Official References & Verified Links</div>
+  <p class="sec-sub">Every link below is an official Malaysian government portal, statutory body, or internationally recognised organisation. Verified May 2026.</p>
+
+  <div class="g3" style="margin-top:1rem;gap:.8rem;">
+
+    <div style="background:#fff;border:1px solid var(--border);border-radius:12px;padding:1.1rem;box-shadow:var(--shadow);">
+      <h4 style="color:var(--navy);font-size:.9rem;font-weight:800;margin-bottom:.7rem;border-bottom:2px solid var(--teal);padding-bottom:.3rem;">🏛️ EP Applications & Immigration</h4>
+      <ul style="font-size:.83rem;line-height:2;list-style:none;padding:0;">
+        <li><a href="https://esd.imi.gov.my" target="_blank" style="color:var(--teal);font-weight:600;">esd.imi.gov.my</a> — ESD / ePASS portal (EP applications, post approval, renewals)</li>
+        <li><a href="https://www.imi.gov.my" target="_blank" style="color:var(--teal);font-weight:600;">imi.gov.my</a> — Jabatan Imigresen Malaysia (Immigration Dept)</li>
+        <li><a href="https://www.moha.gov.my" target="_blank" style="color:var(--teal);font-weight:600;">moha.gov.my</a> — Ministry of Home Affairs (policy & DPP updates)</li>
+        <li style="color:#555;">ESD hotline: <strong>+603-8000 8000</strong> (Mon–Fri 8am–5pm)</li>
+        <li style="color:#555;">ESD One-Stop Centre: Block D, Pusat Bandar Damansara, 50490 KL</li>
+        <li style="color:#555;">Legal basis: <strong>Immigration Act 1959/63, Section 9(1)(b)</strong></li>
+      </ul>
+    </div>
+
+    <div style="background:#fff;border:1px solid var(--border);border-radius:12px;padding:1.1rem;box-shadow:var(--shadow);">
+      <h4 style="color:var(--navy);font-size:.9rem;font-weight:800;margin-bottom:.7rem;border-bottom:2px solid var(--teal);padding-bottom:.3rem;">💼 Job Advertising & Internships</h4>
+      <ul style="font-size:.83rem;line-height:2;list-style:none;padding:0;">
+        <li><a href="https://www.myfuturejobs.gov.my" target="_blank" style="color:var(--teal);font-weight:600;">myfuturejobs.gov.my</a> — MyFutureJobs (govt job board — mandatory for ESD evidence)</li>
+        <li><a href="https://www.jobstreet.com.my" target="_blank" style="color:var(--teal);font-weight:600;">jobstreet.com.my</a> — JobStreet (commercial board, supplement to MyFutureJobs)</li>
+        <li><a href="https://www.talentcorp.com.my" target="_blank" style="color:var(--teal);font-weight:600;">talentcorp.com.my</a> — TalentCorp Malaysia (1:3 internship policy)</li>
+        <li><a href="https://www.myinternship.com.my" target="_blank" style="color:var(--teal);font-weight:600;">myinternship.com.my</a> — Register as internship host (TalentCorp portal)</li>
+      </ul>
+    </div>
+
+    <div style="background:#fff;border:1px solid var(--border);border-radius:12px;padding:1.1rem;box-shadow:var(--shadow);">
+      <h4 style="color:var(--navy);font-size:.9rem;font-weight:800;margin-bottom:.7rem;border-bottom:2px solid var(--teal);padding-bottom:.3rem;">🏢 Company Registration & Tax</h4>
+      <ul style="font-size:.83rem;line-height:2;list-style:none;padding:0;">
+        <li><a href="https://www.ssm.com.my" target="_blank" style="color:var(--teal);font-weight:600;">ssm.com.my</a> — SSM (Companies Commission — get Form 9, business profile)</li>
+        <li><a href="https://www.hasil.gov.my" target="_blank" style="color:var(--teal);font-weight:600;">hasil.gov.my</a> — LHDN / Inland Revenue (tax filing, PCB/MTD, e-PCB)</li>
+        <li><a href="https://www.perkeso.gov.my" target="_blank" style="color:var(--teal);font-weight:600;">perkeso.gov.my</a> — SOCSO/PERKESO (employer contributions — SOCSO Act 1969)</li>
+        <li><a href="https://www.kwsp.gov.my" target="_blank" style="color:var(--teal);font-weight:600;">kwsp.gov.my</a> — EPF/KWSP (voluntary for EP holders — EPF Act 1991)</li>
+        <li><a href="https://www.bnm.gov.my" target="_blank" style="color:var(--teal);font-weight:600;">bnm.gov.my</a> — Bank Negara (licensed insurer list for medical insurance)</li>
+      </ul>
+    </div>
+
+    <div style="background:#fff;border:1px solid var(--border);border-radius:12px;padding:1.1rem;box-shadow:var(--shadow);">
+      <h4 style="color:var(--navy);font-size:.9rem;font-weight:800;margin-bottom:.7rem;border-bottom:2px solid var(--teal);padding-bottom:.3rem;">🌍 Syrian Worker & UNHCR</h4>
+      <ul style="font-size:.83rem;line-height:2;list-style:none;padding:0;">
+        <li><a href="https://www.unhcr.org/my" target="_blank" style="color:var(--teal);font-weight:600;">unhcr.org/my</a> — UNHCR Malaysia (status letters, travel documents)</li>
+        <li style="color:#555;">UNHCR Malaysia hotline: <strong>+603-2141-0082</strong></li>
+        <li style="color:#555;">UNHCR office: Wisma UN, Jalan Dungun, Damansara Heights, KL</li>
+        <li style="color:#555;">Syrian Embassy KL: No. 18, Jalan Kedah, off Jalan Ampang, 50450 KL — Tel: <strong>+603-4251-1600</strong> (passport renewal)</li>
+        <li><a href="https://refugeemalaysia.org" target="_blank" style="color:var(--teal);font-weight:600;">refugeemalaysia.org</a> — Refugee Malaysia NGO (DPP updates, warnings)</li>
+        <li><a href="https://www.rmp.gov.my" target="_blank" style="color:var(--teal);font-weight:600;">rmp.gov.my</a> — PDRM (police clearance certificate — RM 10)</li>
+      </ul>
+    </div>
+
+    <div style="background:#fff;border:1px solid var(--border);border-radius:12px;padding:1.1rem;box-shadow:var(--shadow);">
+      <h4 style="color:var(--navy);font-size:.9rem;font-weight:800;margin-bottom:.7rem;border-bottom:2px solid var(--teal);padding-bottom:.3rem;">🏥 Insurance (Medical for EP)</h4>
+      <ul style="font-size:.83rem;line-height:2;list-style:none;padding:0;">
+        <li><a href="https://www.aia.com.my" target="_blank" style="color:var(--teal);font-weight:600;">aia.com.my</a> — AIA Malaysia</li>
+        <li><a href="https://www.prudential.com.my" target="_blank" style="color:var(--teal);font-weight:600;">prudential.com.my</a> — Prudential Malaysia</li>
+        <li><a href="https://www.etiqa.com.my" target="_blank" style="color:var(--teal);font-weight:600;">etiqa.com.my</a> — Etiqa Insurance & Takaful</li>
+        <li style="color:#555;font-size:.8rem;margin-top:.3rem;">Note: Confirm the insurer accepts refugee-status employees before purchasing. Minimum coverage: RM 10,000–20,000/year per ESD requirements.</li>
+      </ul>
+    </div>
+
+    <div style="background:#fff;border:1px solid var(--border);border-radius:12px;padding:1.1rem;box-shadow:var(--shadow);">
+      <h4 style="color:var(--navy);font-size:.9rem;font-weight:800;margin-bottom:.7rem;border-bottom:2px solid var(--teal);padding-bottom:.3rem;">⚖️ Key Legislation</h4>
+      <ul style="font-size:.83rem;line-height:2;list-style:none;padding:0;">
+        <li><strong>Immigration Act 1959/63</strong> — Section 9(1)(b): Employment Pass; Reg. 16: employer obligations</li>
+        <li><strong>EPF Act 1991</strong> — Second Schedule: voluntary contribution for non-citizens</li>
+        <li><strong>SOCSO Act 1969</strong> — Employment Injury Scheme applies to EP holders</li>
+        <li><strong>Employment Act 1955</strong> — Governs employment contracts, termination, leave</li>
+        <li><strong>Income Tax Act 1967</strong> — PCB/MTD obligations for employer</li>
+        <li style="color:#555;font-size:.8rem;margin-top:.3rem;">All Malaysian legislation available at <a href="https://www.agc.gov.my" target="_blank" style="color:var(--teal);">agc.gov.my</a> (Attorney General's Chambers)</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="alert al-blue" style="margin-top:1.2rem;">
+    <span class="ico">ℹ️</span>
+    <div><strong>Immigration rules change.</strong> This guide reflects requirements as of May 2026. Always verify current thresholds, fees, and required documents directly at <a href="https://esd.imi.gov.my" target="_blank" style="color:var(--navy);font-weight:700;">esd.imi.gov.my</a> before submitting any application. For complex cases (no passport, lapsed UNHCR card, DPP uncertainty), consult a licensed immigration lawyer.</div>
+  </div>
+</div>
+
+<footer>
+  <strong>Maple Home EP Category III Sponsorship Guide</strong> — Updated May 2026<br><br>
+  This guide is for informational purposes and does not constitute legal advice. Verify all current requirements at
+  <a href="https://esd.imi.gov.my" target="_blank">esd.imi.gov.my</a> and
+  <a href="https://www.imi.gov.my" target="_blank">imi.gov.my</a> before submitting applications.<br><br>
+  For complex cases (missing passport, UNHCR card only), consult an immigration lawyer or contact ESD directly.
+</footer>
+
+<script>
+// NAV HIGHLIGHT
+const nas = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  document.querySelectorAll('[id]').forEach(s => { if (window.scrollY >= s.offsetTop - 90) cur = s.id; });
+  nas.forEach(a => { a.classList.remove('active'); if (a.getAttribute('href') === '#' + cur) a.classList.add('active'); });
+});
+nas.forEach(a => { a.addEventListener('click', e => { e.preventDefault(); const t = document.querySelector(a.getAttribute('href')); if (t) t.scrollIntoView({ behavior:'smooth', block:'start' }); }); });
+
+// PHASE STEPPER
+function setPhase(idx, btn) {
+  document.querySelectorAll('.phase-content').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.phase-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('phase-' + idx).classList.add('active');
+  btn.classList.add('active');
+}
+
+// EXPAND CARDS
+function expand(btn) {
+  const body = btn.nextElementSibling;
+  const open = body.classList.contains('open');
+  // Close all in same grid
+  const grid = btn.closest('.exp-grid');
+  if (grid) {
+    grid.querySelectorAll('.exp-body').forEach(b => b.classList.remove('open'));
+    grid.querySelectorAll('.exp-header').forEach(b => b.classList.remove('open'));
+  }
+  if (!open) { body.classList.add('open'); btn.classList.add('open'); }
+  // For template section — allow multiple open
+  if (!grid) {
+    if (!open) { body.classList.add('open'); btn.classList.add('open'); }
+  }
+}
+// Template section: allow multiple open
+document.querySelectorAll('#template .exp-header').forEach(btn => {
+  btn.onclick = function() {
+    const body = this.nextElementSibling;
+    const open = body.classList.contains('open');
+    body.classList.toggle('open');
+    this.classList.toggle('open');
+  };
+});
+
+// CHECKLIST
+let ticked = 0;
+const total = 18;
+function tick(el) {
+  el.classList.toggle('chk');
+  const cb = el.querySelector('.cb');
+  ticked += el.classList.contains('chk') ? 1 : -1;
+  cb.textContent = el.classList.contains('chk') ? '✓' : '';
+  const pct = Math.round((ticked / total) * 100);
+  document.getElementById('pbar').style.width = pct + '%';
+  document.getElementById('plbl').textContent = ticked + ' of ' + total + ' items completed';
+}
+
+// RESPONSIVE
+function rsp() { if (window.innerWidth < 640) document.querySelectorAll('.g2,.g3').forEach(e => e.style.gridTemplateColumns = '1fr'); }
+rsp(); window.addEventListener('resize', rsp);
+</script>
+</body>
+</html>
